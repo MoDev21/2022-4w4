@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-theme name: Lab3 Florence Lemieux Cayer
+theme name: Ex3 Moïse Kaseka
 */
 /* ---------------------------------------------------------
 VARIABLES
@@ -336,15 +336,15 @@ html {
 ÉLÉMENTS
 --------------------------------------------------------- */
 a {
-  color: #7b5647;
+  color: #373E40;
 }
 
 a:visited {
-  color: #5c4033;
+  color: #373E40;
 }
 
 a:hover, a:focus, a:active {
-  color: white;
+  color: #373E40;
 }
 
 a:focus {
@@ -361,9 +361,8 @@ COMPOSANTES
 .principal {
   margin: 20px;
   padding: 10px 15px;
-  background-color: #eca7a7;
+  background-color: #305252;
   border-radius: 5px;
-  box-shadow: #39443e 1px -1px 10px;
 }
 
 .formation {
@@ -373,7 +372,7 @@ COMPOSANTES
 
 .formation__titre {
   font-size: 2rem;
-  color: #443936;
+  color: #B7D5D4;
   margin: 10px 0px;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
@@ -384,8 +383,7 @@ COMPOSANTES
 }
 
 .formation__cours {
-  background-color: #ffd6d1;
-  box-shadow: #394044 1px -1px 10px;
+  background-color: #488286;
   border-radius: 5px;
   margin: 10px;
   display: flex;
@@ -396,13 +394,13 @@ COMPOSANTES
 
 .cours__titre {
   font-size: 1.5rem;
-  color: #443936;
+  color: #B7D5D4;
   margin: 5px 0px;
 }
 
 .cours__sigle {
   font-size: 1.2rem;
-  color: #8a5353;
+  color: #b7d5d4;
   margin: 0;
 }
 
@@ -411,19 +409,70 @@ COMPOSANTES
 }
 
 .site__header {
-  background-color: #594036;
-  color: #fa9292;
+  background-color: #305252;
+  color: #B7D5D4;
   padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: flex-end;
 }
 
-.site__header .header__titre {
-  font-size: 3em;
+@media screen and (min-width: 800px) {
+  .site__header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.site__header__titre h1 {
+  font-size: clamp(2rem, 3vw, 7rem);
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
-.site__header .header__desc {
-  font-size: 1.5rem;
+.site__header__titre h2 {
+  font-size: clamp(1rem, 2vw, 4rem);
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.site__header__util {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+  .site__header__util {
+    width: 23%;
+  }
+}
+
+.recherche {
+  width: 100%;
+  position: relative;
+  background-color: #b7d5d400;
+}
+
+.recherche__input {
+  width: 100%;
+  outline: 0;
+  border: 0;
+  padding: 15px;
+  margin: 0;
+}
+
+.recherche__bouton {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25px;
+  height: 25px;
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
 }
 
 .navigation {
@@ -433,23 +482,23 @@ COMPOSANTES
 
 .navigation__lien {
   padding: 1rem;
-  background-color: #ffa3a3;
+  background-color: #488286;
 }
 
 .navigation__lien:hover {
-  background-color: #ffd1d1;
+  background-color: #38c4ce;
 }
 
 .site__footer {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  background-color: #2f2a28;
-  padding: 15px;
+  background-color: #305252;
+  padding: 10px;
 }
 
 .footer__titre,
 .footer__presentation,
 .footer__author {
-  color: #ffcabc;
+  color: #B7D5D4;
   text-align: center;
 }
 
@@ -460,7 +509,7 @@ LAYOUT
 theme name: Lab 2 Lemieux Florence
 */
 .site {
-  background-color: #957365;
+  background-color: #373E40;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
@@ -472,21 +521,21 @@ theme name: Lab 2 Lemieux Florence
 
 .site__header {
   grid-area: header;
-  background-color: #594036;
+  background-color: #305252;
 }
 
 .site__barre {
   grid-area: sidebar;
-  background-color: #ff8585;
+  background-color: #305252;
 }
 
 .site__main {
   grid-area: main;
-  background-color: #eca7a7;
+  background-color: #305252;
 }
 
 .site__footer {
   grid-area: footer;
-  background-color: #2f2a28;
+  background-color: #305252;
 }
 /*# sourceMappingURL=style.css.map */
