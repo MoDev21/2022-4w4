@@ -1,0 +1,13 @@
+.navigation{
+    display: flex;
+    flex-direction: column;
+}
+
+.navigation__lien {
+    padding: 1rem;
+    background-color: $color__background-link;
+}
+
+.navigation__lien:hover {
+    background-color: $color__background-link-hover;
+}
