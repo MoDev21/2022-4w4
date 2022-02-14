@@ -28,7 +28,13 @@
     margin: 10px;
     display: flex;
     flex-direction: column;
-    width: 23%;
+    width: 100%;
+    @media screen and (min-width : $largeur__media--tablette){
+        width: 45%;
+    }
+    @media screen and (min-width : $largeur__media--desktop){
+        width: 30%;
+    }
     padding: 10px;
 }
 

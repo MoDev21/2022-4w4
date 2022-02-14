@@ -8,6 +8,7 @@ VARIABLES
 /* ---------------- BACKGROUND */
 /* ---------------- LIENS */
 /* ---------------- FONT */
+/*--------point de rupture des madies query*/
 /* ---------------------------------------------------------
 INITIALISATION
 --------------------------------------------------------- */
@@ -336,15 +337,15 @@ html {
 ÉLÉMENTS
 --------------------------------------------------------- */
 a {
-  color: #373E40;
+  color: #00eaff;
 }
 
 a:visited {
-  color: #373E40;
+  color: #48666e;
 }
 
 a:hover, a:focus, a:active {
-  color: #373E40;
+  color: #B7D5D4;
 }
 
 a:focus {
@@ -374,7 +375,7 @@ COMPOSANTES
   font-size: 2rem;
   color: #B7D5D4;
   margin: 10px 0px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 .formation__liste {
@@ -388,8 +389,20 @@ COMPOSANTES
   margin: 10px;
   display: flex;
   flex-direction: column;
-  width: 23%;
+  width: 100%;
   padding: 10px;
+}
+
+@media screen and (min-width: 800px) {
+  .formation__cours {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .formation__cours {
+    width: 30%;
+  }
 }
 
 .cours__titre {
@@ -428,12 +441,12 @@ COMPOSANTES
 
 .site__header__titre h1 {
   font-size: clamp(2rem, 3vw, 7rem);
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 .site__header__titre h2 {
   font-size: clamp(1rem, 2vw, 4rem);
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 .site__header__util {
@@ -475,22 +488,61 @@ COMPOSANTES
   margin: 0;
 }
 
-.navigation {
-  display: flex;
-  flex-direction: column;
+#burger {
+  position: absolute;
+  transition: transform .3s;
+  transform: rotate(0);
 }
 
-.navigation__lien {
-  padding: 1rem;
+#chk-burge {
+  display: none;
+}
+
+#chk-burger:checked ~ #burger {
+  transform: rotate(90deg);
+}
+
+.menu-principal-container {
+  display: none;
+}
+
+#chk-burger:checked ~ .menu-principal-container {
+  display: block;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-item {
+  margin: 0;
+  padding: 0;
+}
+
+.menu-item a {
+  display: block;
+  text-decoration: none;
+  padding: 4px;
   background-color: #488286;
 }
 
-.navigation__lien:hover {
+.menu-item a:hover {
   background-color: #38c4ce;
 }
 
+@media screen and (min-width: 800px) {
+  #burger {
+    display: none;
+  }
+  .menu-principal-container {
+    display: block;
+  }
+}
+
 .site__footer {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   background-color: #305252;
   padding: 10px;
 }
@@ -510,13 +562,7 @@ theme name: Lab 2 Lemieux Florence
 */
 .site {
   background-color: #373E40;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-
-.site {
-  display: grid;
-  grid-template-columns: 300px auto;
-  grid-template-areas: "header header" "sidebar main" "footer footer";
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 .site__header {
@@ -537,5 +583,18 @@ theme name: Lab 2 Lemieux Florence
 .site__footer {
   grid-area: footer;
   background-color: #305252;
+}
+
+.site {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas: "sidebar" "header" "main" "footer";
+}
+
+@media screen and (min-width: 800px) {
+  .site {
+    grid-template-columns: 300px auto;
+    grid-template-areas: "header header" "sidebar main" "footer footer";
+  }
 }
 /*# sourceMappingURL=style.css.map */
