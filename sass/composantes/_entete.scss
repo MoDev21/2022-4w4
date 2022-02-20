@@ -1,0 +1,13 @@
+.entete {
+    background-color: $color__background-entete;
+
+    &__titre {
+        font-size: 3rem;
+        font-family: $font__main;
+    }
+    
+    &__description{
+        font-size: 3rem;
+    }
+}
+
