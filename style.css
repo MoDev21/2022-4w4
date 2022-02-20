@@ -7,6 +7,7 @@ VARIABLES
 --------------------------------------------------------- */
 /* ---------------- BACKGROUND */
 /* ---------------- LIENS */
+/* ---------------- LIENS FOOTER*/
 /* ---------------- FONT */
 /*--------point de rupture des madies query*/
 /* ---------------------------------------------------------
@@ -356,6 +357,26 @@ a:hover, a:active {
   outline: 0;
 }
 
+.site__footer a {
+  color: #3b9097;
+}
+
+.site__footer a:visited {
+  color: #388da5;
+}
+
+.site__footer a:hover, .site__footer a:focus, .site__footer a:active {
+  color: #00ece4;
+}
+
+.site__footer a:focus {
+  outline: thin dotted;
+}
+
+.site__footer a:hover, .site__footer a:active {
+  outline: 0;
+}
+
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
@@ -545,6 +566,26 @@ COMPOSANTES
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   background-color: #305252;
   padding: 10px;
+}
+
+.site__footer__menu__ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+}
+
+.site__footer__menu__ul .menu_item {
+  margin: 10px 5px;
+}
+
+.site__footer__menu__ul .menu_item a {
+  display: flex;
+  align-items: center;
+  padding: 3px;
+}
+
+.site__footer__menu__ul .menu_item a svg {
+  color: cyan;
 }
 
 .footer__titre,
