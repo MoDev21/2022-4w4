@@ -6,20 +6,26 @@
     &__menu{ // .site__footer__menu
 
       &__ul{ // .site__footer__menu__ul
-          display: flex;
-          list-style-type: none;
-          justify-content: center;
-          .menu_item{ // .site__footer__menu__ul .menu-item
-              margin: 10px 5px;
-            a{ // .site__footer__menu__ul .menu-item a
-              display: flex;
-              align-items: center;
-              padding: 3px;
-              svg{ // .site__footer__menu__ul .menu-item a svg
-                color: cyan;
+        display: flex;
+        list-style-type: none;
+        justify-content: center;
+        .menu_item{ // .site__footer__menu__ul .menu-item
+            margin: 10px 5px;
+          a{ // .site__footer__menu__ul .menu-item a
+            display: flex;
+            align-items: center;
+            padding: 3px;
+            svg{ // .site__footer__menu__ul .menu-item a svg
+              color: $color__link__footer;
+            }
+          
+            &:hover{
+              svg{
+                color: $color__link__footer-hover;
               }
             }
           }
+        }
       }
     }
   }

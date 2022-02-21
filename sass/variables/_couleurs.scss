@@ -1,22 +1,28 @@
 /* ---------------- BACKGROUND */
-$color__background-body : #373E40;
-$color__background-main : #305252;
-$color__background-cours : #488286;
-$color__background-header : #305252;;
-$color__background-barre : #305252;
-$color__background-footer : #305252;;
+$color__background-body : #56afaf;
+$color__background-main : #408181;
+$color__background-cours : hsl(184, 30%, 40%);
+$color__background-header : #408181;;
+$color__background-barre : #408181;
+$color__background-footer : #408181;;
 $color__background-link : #488286;
 $color__background-link-hover : #38c4ce;
 
 /* ---------------- LIENS */
-$color__link : #00eaff;
-$color__link-hover : #B7D5D4;
-$color__link-visited : #48666e;
+$color__link : #00ece4;
+$color__link-hover : #246b69;
+$color__link-visited : #00ece4;
+
+/* ---------------- LIENS HEADER titre principal du site*/
+$color__link__header : #00ece4;
+$color__link__header-hover : #246b69;
+$color__link__header-visited : #00ece4;
 
 /* ---------------- LIENS FOOTER*/
-$color__link__footer : #3b9097;
-$color__link__footer-hover : #00ece4;
-$color__link__footer-visited : #388da5;
+$color__link__footer : #00ece4;
+$color__link__footer-hover : #246b69;
+$color__link__footer-visited : #00ece4;
+
 
 /* ---------------- FONT */
 $color__font-header : #B7D5D4;

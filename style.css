@@ -15,6 +15,7 @@ VARIABLES
 --------------------------------------------------------- */
 /* ---------------- BACKGROUND */
 /* ---------------- LIENS */
+/* ---------------- LIENS HEADER titre principal du site*/
 /* ---------------- LIENS FOOTER*/
 /* ---------------- FONT */
 /*--------point de rupture des madies query*/
@@ -346,15 +347,15 @@ html {
 ÉLÉMENTS
 --------------------------------------------------------- */
 a {
-  color: #00eaff;
+  color: #00ece4;
 }
 
 a:visited {
-  color: #48666e;
+  color: #00ece4;
 }
 
 a:hover, a:focus, a:active {
-  color: #B7D5D4;
+  color: #246b69;
 }
 
 a:focus {
@@ -366,15 +367,15 @@ a:hover, a:active {
 }
 
 .site__footer a {
-  color: #3b9097;
+  color: #00ece4;
 }
 
 .site__footer a:visited {
-  color: #388da5;
+  color: #00ece4;
 }
 
 .site__footer a:hover, .site__footer a:focus, .site__footer a:active {
-  color: #00ece4;
+  color: #246b69;
 }
 
 .site__footer a:focus {
@@ -385,13 +386,41 @@ a:hover, a:active {
   outline: 0;
 }
 
+.header__titre a {
+  color: #00ece4;
+}
+
+.header__titre a:visited {
+  color: #00ece4;
+}
+
+.header__titre a:hover, .header__titre a:focus, .header__titre a:active {
+  color: #246b69;
+}
+
+.header__titre a:focus {
+  outline: thin dotted;
+}
+
+.header__titre a:hover, .header__titre a:active {
+  outline: 0;
+}
+
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
-.principal {
+.site__main {
   margin: 20px;
   padding: 10px 15px;
-  background-color: #305252;
+  background-color: #408181;
+  border-radius: 5px;
+}
+
+.site__main, h3 {
+  margin: 20px;
+  padding: 10px 15px;
+  background-color: #408181;
+  color: darkturquoise;
   border-radius: 5px;
 }
 
@@ -404,7 +433,7 @@ COMPOSANTES
   font-size: 2rem;
   color: #B7D5D4;
   margin: 10px 0px;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: "Saira", sans-serif;
 }
 
 .formation__liste {
@@ -413,7 +442,7 @@ COMPOSANTES
 }
 
 .formation__cours {
-  background-color: #488286;
+  background-color: #478185;
   border-radius: 5px;
   margin: 10px;
   display: flex;
@@ -451,12 +480,11 @@ COMPOSANTES
 }
 
 .site__header {
-  background-color: #305252;
+  background-color: #408181;
   color: #B7D5D4;
   padding-left: 10px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   align-items: flex-end;
 }
 
@@ -470,12 +498,13 @@ COMPOSANTES
 
 .site__header__titre h1 {
   font-size: clamp(2rem, 3vw, 7rem);
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: "Saira", sans-serif;
+  align-items: center;
 }
 
 .site__header__titre h2 {
   font-size: clamp(1rem, 2vw, 4rem);
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-family: "Saira", sans-serif;
 }
 
 .site__header__util {
@@ -494,10 +523,10 @@ COMPOSANTES
 .recherche {
   width: 100%;
   position: relative;
-  background-color: #b7d5d400;
 }
 
 .recherche__input {
+  background-color: #2d5755;
   width: 100%;
   outline: 0;
   border: 0;
@@ -506,6 +535,7 @@ COMPOSANTES
 }
 
 .recherche__bouton {
+  background-color: #b7d5d400;
   position: absolute;
   top: 0;
   right: 0;
@@ -514,16 +544,17 @@ COMPOSANTES
   border: none;
   outline: none;
   padding: 0;
-  margin: 0;
+  margin: 10px;
 }
 
 #burger {
   position: absolute;
   transition: transform .3s;
   transform: rotate(0);
+  top: 15px;
 }
 
-#chk-burge {
+#chk-burger {
   display: none;
 }
 
@@ -571,8 +602,8 @@ COMPOSANTES
 }
 
 .site__footer {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  background-color: #305252;
+  font-family: "Saira", sans-serif;
+  background-color: #408181;
   padding: 10px;
 }
 
@@ -593,7 +624,11 @@ COMPOSANTES
 }
 
 .site__footer__menu__ul .menu_item a svg {
-  color: cyan;
+  color: #00ece4;
+}
+
+.site__footer__menu__ul .menu_item a:hover svg {
+  color: #246b69;
 }
 
 .footer__titre,
@@ -604,38 +639,69 @@ COMPOSANTES
 }
 
 /* ---------------------------------------------------------
+ANIMATIONS
+--------------------------------------------------------- */
+.animation {
+  display: flex;
+  justify-content: center;
+}
+
+.animation__bloc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #2d6666;
+  color: darkturquoise;
+  font-size: 3rem;
+  animation: anim-entete 1s forwards;
+}
+
+@keyframes anim-entete {
+  0% {
+    transform: translateY(-100vh);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* ---------------------------------------------------------
 LAYOUT
 --------------------------------------------------------- */
 /*
 theme name: Lab 4 Lemieux Florence
 */
 .site {
-  background-color: #373E40;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  background-color: #56afaf;
+  font-family: "Saira", sans-serif;
 }
 
 .site__header {
   grid-area: header;
-  background-color: #305252;
+  background-color: #408181;
 }
 
 .site__barre {
   grid-area: sidebar;
-  background-color: #305252;
+  background-color: #408181;
 }
 
 .site__main {
   grid-area: main;
-  background-color: #305252;
+  background-color: #408181;
 }
 
 .site__footer {
   grid-area: footer;
-  background-color: #305252;
+  background-color: #408181;
 }
 
 .site {
   display: grid;
+  gap: 10px;
   grid-template-columns: auto;
   grid-template-areas: "sidebar" "header" "main" "footer";
 }
