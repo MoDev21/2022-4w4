@@ -520,33 +520,6 @@ COMPOSANTES
   }
 }
 
-.recherche {
-  width: 100%;
-  position: relative;
-}
-
-.recherche__input {
-  background-color: #2d5755;
-  width: 100%;
-  outline: 0;
-  border: 0;
-  padding: 15px;
-  margin: 0;
-}
-
-.recherche__bouton {
-  background-color: #b7d5d400;
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 25px;
-  height: 25px;
-  border: none;
-  outline: none;
-  padding: 0;
-  margin: 10px;
-}
-
 #burger {
   position: absolute;
   transition: transform .3s;
@@ -640,6 +613,33 @@ COMPOSANTES
 
 .cours__contenu {
   display: flex;
+}
+
+.recherche {
+  width: 100%;
+  position: relative;
+}
+
+.recherche__input {
+  background-color: rgba(45, 87, 85, 0.1);
+  width: 100%;
+  outline: 0;
+  border: 0;
+  padding: 15px;
+  margin: 0;
+}
+
+.recherche__bouton {
+  background-color: rgba(45, 87, 85, 0.1) #b7d5d400;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25px;
+  height: 25px;
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 10px;
 }
 
 /* ---------------------------------------------------------
