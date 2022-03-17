@@ -12,12 +12,13 @@
     border: none;
     padding: 15px;
     margin: 0;
+    border-radius: 5px;
     &:focus{
       background-color: rgba(rgb(0, 192, 182), 1);
     }
   }
   &__bouton{
-    background-color: rgba(#b7d5d400, .1);
+    background-color: rgba(rgba(183, 213, 212, 0), .5);
     position: absolute;
     top: 0;
     right: 0;

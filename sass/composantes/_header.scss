@@ -4,7 +4,7 @@
     padding-left: 10px;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: center;
 
 
     @media screen and (min-width: 800px){
@@ -27,8 +27,8 @@
 
     &__util{// .site__header__util
       display: flex;
-      flex-direction: row;
-      align-items: flex-end;
+      flex-direction: column;
+      align-items: center;
       width: 100%;
       @media screen and (min-width: 800px){
         width: 23%;
@@ -36,12 +36,12 @@
     }
   }
 
-  .icone {
-    &__lien{
+  // .icone {
+  //   &__lien{
 
-      svg{}
-    }
-  }
+  //     svg{}
+  //   }
+  // }
 
   // .recherche{
   //   width: 100%;

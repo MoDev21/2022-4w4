@@ -26,7 +26,7 @@
 
 /*-------------------------------------------------------*/
 
-@mixin links__menu($couleur, 
+@mixin links__menu ($couleur, 
 			 $couleur--visited, 
 			 $couleur--hover,
 			 $background, 
@@ -77,7 +77,7 @@ a{
 }
 
 .site__footer .menu-item a{
-	@include links_menu ( 	$color__link__footer__menu, 
+	@include links__menu ( 	$color__link__footer__menu, 
 							$color__link__footer__menu-visited, 
 							$color__link__footer__menu-hover,
 							$background__link__footer__menu, 
@@ -86,7 +86,7 @@ a{
 }
 
 .menu-principal .menu-item a{
-	@include links_menu ( 	$color__link__principal, 
+	@include links__menu ( 	$color__link__principal, 
 							$color__link__principal-visited, 
 							$color__link__principal-hover,
 							$background__link__principal, 

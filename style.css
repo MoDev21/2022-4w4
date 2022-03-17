@@ -17,6 +17,7 @@ VARIABLES
 /* ---------------- LIENS */
 /* ---------------- LIENS HEADER titre principal du site*/
 /* ---------------- LIENS FOOTER*/
+/* ---------------- COULEUR FOOTER MENU*/
 /* ---------------- FONT */
 /*--------point de rupture des madies query*/
 /* ---------------------------------------------------------
@@ -346,6 +347,7 @@ html {
 /* ---------------------------------------------------------
 ÉLÉMENTS
 --------------------------------------------------------- */
+/*-------------------------------------------------------*/
 a {
   color: #00ece4;
 }
@@ -403,6 +405,52 @@ a:hover, a:active {
 }
 
 .header__titre a:hover, .header__titre a:active {
+  outline: 0;
+}
+
+.site__footer .menu-item a {
+  color: #3cafab;
+  background-color: #1d4d4b;
+}
+
+.site__footer .menu-item a:visited {
+  color: #1d4d4b;
+  background-color: #2d8f8c;
+}
+
+.site__footer .menu-item a:hover, .site__footer .menu-item a:focus, .site__footer .menu-item a:active {
+  color: #44f1eb;
+  background-color: #3cafab;
+}
+
+.site__footer .menu-item a:focus {
+  outline: thin dotted;
+}
+
+.site__footer .menu-item a:hover, .site__footer .menu-item a:active {
+  outline: 0;
+}
+
+.menu-principal .menu-item a {
+  color: #3cafab;
+  background-color: #3cafab;
+}
+
+.menu-principal .menu-item a:visited {
+  color: #1d4d4b;
+  background-color: #1d4d4b;
+}
+
+.menu-principal .menu-item a:hover, .menu-principal .menu-item a:focus, .menu-principal .menu-item a:active {
+  color: #44f1eb;
+  background-color: #44f1eb;
+}
+
+.menu-principal .menu-item a:focus {
+  outline: thin dotted;
+}
+
+.menu-principal .menu-item a:hover, .menu-principal .menu-item a:active {
   outline: 0;
 }
 
@@ -485,7 +533,7 @@ COMPOSANTES
   padding-left: 10px;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
 }
 
 @media screen and (min-width: 800px) {
@@ -509,8 +557,8 @@ COMPOSANTES
 
 .site__header__util {
   display: flex;
-  flex-direction: row;
-  align-items: flex-end;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
 }
 
@@ -618,19 +666,27 @@ COMPOSANTES
 .recherche {
   width: 100%;
   position: relative;
+  display: flex;
 }
 
 .recherche__input {
-  background-color: rgba(45, 87, 85, 0.1);
+  flex: 1;
   width: 100%;
-  outline: 0;
-  border: 0;
+  background-color: rgba(46, 88, 86, 0.5);
+  transition: all .3s;
+  outline: none;
+  border: none;
   padding: 15px;
   margin: 0;
+  border-radius: 5px;
+}
+
+.recherche__input:focus {
+  background-color: #00c0b6;
 }
 
 .recherche__bouton {
-  background-color: rgba(45, 87, 85, 0.1) #b7d5d400;
+  background-color: rgba(183, 213, 212, 0.5);
   position: absolute;
   top: 0;
   right: 0;
@@ -669,6 +725,7 @@ ANIMATIONS
   }
   100% {
     transform: translateY(0);
+    transition: ease-in;
   }
 }
 
@@ -679,7 +736,7 @@ LAYOUT
 theme name: Lab 4 Lemieux Florence
 */
 .site {
-  background-color: #56afaf;
+  background-color: #44a7a7;
   font-family: "Saira", sans-serif;
 }
 

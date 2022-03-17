@@ -2,7 +2,7 @@
 <main class="site__main">
 
 
-    <h1>--- single-post.php ------</h1>
+    <!-- <h1>--- single-post.php ------</h1> -->
     <?php if (have_posts()): while(have_posts()): the_post(); ?>
         <article class="cours">
             <h1 class="cours__titre">
