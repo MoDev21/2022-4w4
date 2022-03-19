@@ -1,0 +1,776 @@
+@charset "UTF-8";
+/*
+theme name: Tp1 Moïse Kaseka
+Author: Moïse Kaseka
+Author URL: https://github.com/MoDev21/2022-4w4
+Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/eddytuto/2022-4w4
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: cidw-4w4
+
+*/
+/* ---------------------------------------------------------
+VARIABLES
+--------------------------------------------------------- */
+/* ---------------- BACKGROUND */
+/* ---------------- LIENS */
+/* ---------------- LIENS HEADER titre principal du site*/
+/* ---------------- LIENS FOOTER*/
+/* ---------------- COULEUR FOOTER MENU*/
+/* ---------------- FONT */
+/*--------point de rupture des madies query*/
+/* ---------------------------------------------------------
+INITIALISATION
+--------------------------------------------------------- */
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+	 ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Sections
+	 ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+	 ========================================================================== */
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Text-level semantics
+	 ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+	 ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+	 ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *		`fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+/* Interactive
+	 ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Misc
+	 ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none;
+}
+
+/* Inherit box-sizing to more easily change it's value on a component level.
+@link http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+/* ---------------------------------------------------------
+ÉLÉMENTS
+--------------------------------------------------------- */
+/*-------------------------------------------------------*/
+a {
+  color: #00ece4;
+}
+
+a:visited {
+  color: #00ece4;
+}
+
+a:hover, a:focus, a:active {
+  color: #246b69;
+}
+
+a:focus {
+  outline: thin dotted;
+}
+
+a:hover, a:active {
+  outline: 0;
+}
+
+.site__footer a {
+  color: #00ece4;
+}
+
+.site__footer a:visited {
+  color: #00ece4;
+}
+
+.site__footer a:hover, .site__footer a:focus, .site__footer a:active {
+  color: #246b69;
+}
+
+.site__footer a:focus {
+  outline: thin dotted;
+}
+
+.site__footer a:hover, .site__footer a:active {
+  outline: 0;
+}
+
+.header__titre a {
+  color: #00ece4;
+}
+
+.header__titre a:visited {
+  color: #00ece4;
+}
+
+.header__titre a:hover, .header__titre a:focus, .header__titre a:active {
+  color: #246b69;
+}
+
+.header__titre a:focus {
+  outline: thin dotted;
+}
+
+.header__titre a:hover, .header__titre a:active {
+  outline: 0;
+}
+
+.site__footer .menu-item a {
+  color: #3cafab;
+  background-color: #1d4d4b;
+}
+
+.site__footer .menu-item a:visited {
+  color: #1d4d4b;
+  background-color: #2d8f8c;
+}
+
+.site__footer .menu-item a:hover, .site__footer .menu-item a:focus, .site__footer .menu-item a:active {
+  color: #44f1eb;
+  background-color: #3cafab;
+}
+
+.site__footer .menu-item a:focus {
+  outline: thin dotted;
+}
+
+.site__footer .menu-item a:hover, .site__footer .menu-item a:active {
+  outline: 0;
+}
+
+.menu-principal .menu-item a {
+  color: #3cafab;
+  background-color: #3cafab;
+}
+
+.menu-principal .menu-item a:visited {
+  color: #1d4d4b;
+  background-color: #1d4d4b;
+}
+
+.menu-principal .menu-item a:hover, .menu-principal .menu-item a:focus, .menu-principal .menu-item a:active {
+  color: #44f1eb;
+  background-color: #44f1eb;
+}
+
+.menu-principal .menu-item a:focus {
+  outline: thin dotted;
+}
+
+.menu-principal .menu-item a:hover, .menu-principal .menu-item a:active {
+  outline: 0;
+}
+
+/* ---------------------------------------------------------
+COMPOSANTES
+--------------------------------------------------------- */
+.site__main {
+  margin: 20px;
+  padding: 10px 15px;
+  background-color: #408181;
+  border-radius: 5px;
+}
+
+.site__main, h3 {
+  margin: 20px;
+  padding: 10px 15px;
+  background-color: #408181;
+  color: darkturquoise;
+  border-radius: 5px;
+}
+
+.formation {
+  display: flex;
+  flex-direction: column;
+}
+
+.formation__titre {
+  font-size: 2rem;
+  color: #B7D5D4;
+  margin: 10px 0px;
+  font-family: "Saira", sans-serif;
+}
+
+.formation__liste {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.formation__cours {
+  background-color: #478185;
+  border-radius: 5px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+}
+
+@media screen and (min-width: 800px) {
+  .formation__cours {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .formation__cours {
+    width: 30%;
+  }
+}
+
+.cours__titre {
+  font-size: 1.5rem;
+  color: #B7D5D4;
+  margin: 5px 0px;
+}
+
+.cours__sigle {
+  font-size: 1.2rem;
+  color: #b7d5d4;
+  margin: 0;
+}
+
+.cours__description {
+  font-size: 1rem;
+}
+
+.site__header {
+  background-color: #408181;
+  color: #B7D5D4;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media screen and (min-width: 800px) {
+  .site__header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.site__header__titre h1 {
+  font-size: clamp(2rem, 3vw, 7rem);
+  font-family: "Saira", sans-serif;
+  align-items: center;
+}
+
+.site__header__titre h2 {
+  font-size: clamp(1rem, 2vw, 4rem);
+  font-family: "Saira", sans-serif;
+}
+
+.site__header__util {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+  .site__header__util {
+    width: 23%;
+  }
+}
+
+#burger {
+  position: absolute;
+  transition: transform .3s;
+  transform: rotate(0);
+  top: 15px;
+}
+
+#chk-burger {
+  display: none;
+}
+
+#chk-burger:checked ~ #burger {
+  transform: rotate(90deg);
+}
+
+.menu-principal-container {
+  display: none;
+}
+
+#chk-burger:checked ~ .menu-principal-container {
+  display: block;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-item {
+  margin: 0;
+  padding: 0;
+}
+
+.menu-item a {
+  display: block;
+  text-decoration: none;
+  padding: 4px;
+  background-color: #488286;
+}
+
+.menu-item a:hover {
+  background-color: #38c4ce;
+}
+
+@media screen and (min-width: 800px) {
+  #burger {
+    display: none;
+  }
+  .menu-principal-container {
+    display: block;
+  }
+}
+
+.site__footer {
+  font-family: "Saira", sans-serif;
+  background-color: #408181;
+  padding: 10px;
+}
+
+.site__footer__menu__ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+}
+
+.site__footer__menu__ul .menu_item {
+  margin: 10px 5px;
+}
+
+.site__footer__menu__ul .menu_item a {
+  display: flex;
+  align-items: center;
+  padding: 3px;
+}
+
+.site__footer__menu__ul .menu_item a svg {
+  color: #00ece4;
+}
+
+.site__footer__menu__ul .menu_item a:hover svg {
+  color: #246b69;
+}
+
+.footer__titre,
+.footer__presentation,
+.footer__author {
+  color: #B7D5D4;
+  text-align: center;
+}
+
+.cours__contenu {
+  display: flex;
+}
+
+.recherche {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.recherche__input {
+  flex: 1;
+  width: 100%;
+  background-color: rgba(46, 88, 86, 0.5);
+  transition: all .3s;
+  outline: none;
+  border: none;
+  padding: 15px;
+  margin: 0;
+  border-radius: 5px;
+}
+
+.recherche__input:focus {
+  background-color: #00c0b6;
+}
+
+.recherche__bouton {
+  background-color: rgba(183, 213, 212, 0.5);
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25px;
+  height: 25px;
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 10px;
+}
+
+/* ---------------------------------------------------------
+ANIMATIONS
+--------------------------------------------------------- */
+.animation {
+  display: flex;
+  justify-content: center;
+}
+
+.animation__bloc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #2d6666;
+  color: darkturquoise;
+  font-size: 3rem;
+  animation: anim-entete 1s forwards;
+}
+
+@keyframes anim-entete {
+  0% {
+    transform: translateY(-100vh);
+  }
+  100% {
+    transform: translateY(0);
+    transition: ease-in;
+  }
+}
+
+/* ---------------------------------------------------------
+LAYOUT
+--------------------------------------------------------- */
+/*
+theme name: Lab 4 Lemieux Florence
+*/
+.site {
+  background-color: #44a7a7;
+  font-family: "Saira", sans-serif;
+}
+
+.site__header {
+  grid-area: header;
+  background-color: #408181;
+}
+
+.site__barre {
+  grid-area: sidebar;
+  background-color: #408181;
+}
+
+.site__main {
+  grid-area: main;
+  background-color: #408181;
+}
+
+.site__footer {
+  grid-area: footer;
+  background-color: #408181;
+}
+
+.site {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: auto;
+  grid-template-areas: "sidebar" "header" "main" "footer";
+}
+
+@media screen and (min-width: 800px) {
+  .site {
+    grid-template-columns: 300px auto;
+    grid-template-areas: "header header" "sidebar main" "footer footer";
+  }
+}
+/*# sourceMappingURL=style.css.map */
