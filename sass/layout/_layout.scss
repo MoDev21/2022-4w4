@@ -18,16 +18,44 @@ theme name: Lab 4 Lemieux Florence
 .site__barre{
     grid-area: sidebar;
     background-color: $color__background-barre;
+    border-radius: 5px;
+
 }
 
 .site__main{
     grid-area: main;
     background-color: $color__background-main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .site__footer{
     grid-area: footer;
     background-color: $color__background-footer;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    bottom: -200px;
+}
+
+.site__footer-colonnes{
+    grid-area: footer;
+    background-color: $color__background-footer;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+
+.site__footer-colonnes{
+    grid-area: footer;
+    background-color: $color__background-footer;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
 }
 
 .site {

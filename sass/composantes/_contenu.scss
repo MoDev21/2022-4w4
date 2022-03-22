@@ -8,8 +8,8 @@
 .site__main, h3 {
     margin: 20px;
     padding: 10px 15px;
-    background-color: $color__background-main;
-    color: darkturquoise;
+    background-color: #40818100;
+    color: $color__font-main;
     border-radius: 5px;
 }
 
@@ -24,6 +24,8 @@
     color: $color__font-main;
     margin: 10px 0px;
     font-family: $font__titre;
+    text-align: center;
+    text-decoration: none;
 }
 
 .formation__liste {
@@ -33,6 +35,37 @@
 
 .formation__cours {
     background-color: $color__background-cours;
+    color: $color__font-main;
+    border-radius: 5px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    animation: anim-entete 1s forwards;
+    @media screen and (min-width : $largeur__media--tablette){
+        width: 45%;
+    }
+    @media screen and (min-width : $largeur__media--desktop){
+        width: 30%;
+    }
+    padding: 10px;
+}
+
+@keyframes anim-entete {
+    0%{
+        transform: translateY(-100vh);  
+        
+    }
+    100%{
+        transform: translateY(0);
+        transition: ease-in;
+    }
+}
+
+.formation__cours:hover {
+    transition: 0.5s;
+    background-color: $color__background-cours-hover;
+    color: $color__font-main-hover;
     border-radius: 5px;
     margin: 10px;
     display: flex;
@@ -45,11 +78,35 @@
         width: 30%;
     }
     padding: 10px;
+
+    .cours__titre a{
+        font-size: 1.8rem;
+        color: $color__font-main-hover;
+        font-family: $font__titre;
+        text-align: center;
+        margin: 5px 0px;
+        transition: 0.5s;
+    }
+
+    .cours__titre a:hover{
+        font-size: 1.9rem;
+        color: rgba($color__font-main-hover, 0.5);
+    }
+    
+
+    .cours__sigle {
+        font-size: 1.2rem;
+        color: $color__font-main-hover;
+        margin: 0;
+    }
+
 }
 
 .cours__titre {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     color: $color__font-main;
+    font-family: $font__titre;
+    text-align: center;
     margin: 5px 0px;
 }
 

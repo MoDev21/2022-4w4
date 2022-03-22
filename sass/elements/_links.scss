@@ -61,7 +61,8 @@
 a{
 	@include links( $color__link, 
 					$color__link-visited, 
-					$color__link-hover );
+					rgba($color__link-hover, 0.5));
+	text-decoration: none;
 }
 
 .site__footer a{
@@ -74,6 +75,9 @@ a{
 	@include links( $color__link__header, 
 					$color__link__header-visited, 
 					$color__link__header-hover);
+	font-family: $font__titre;
+	text-decoration: none;
+	transition: 0.2s;
 }
 
 .site__footer .menu-item a{
@@ -83,6 +87,7 @@ a{
 							$background__link__footer__menu, 
 							$background__link__footer__menu-visited, 
 							$background__link__footer__menu-hover);
+	border-radius: 10px;
 }
 
 .menu-principal .menu-item a{

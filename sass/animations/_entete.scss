@@ -9,20 +9,19 @@
         width: 100px;
         height: 100px;
         border-radius: 50%;
-        background-color: #2d6666;
-        color: darkturquoise;
-        font-size: 3rem;
+        color: $color__font-main;
+        font-size: 5rem;
         animation: anim-entete 1s forwards;
     }
 }
 
 @keyframes anim-entete {
     0%{
-        transform: translateY(-100vh);  
+        transform: scale(0);  
         
     }
     100%{
-        transform: translateY(0);
+        transform: scale(1);
         transition: ease-in;
     }
 }

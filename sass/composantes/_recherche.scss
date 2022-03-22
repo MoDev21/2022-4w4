@@ -6,7 +6,7 @@
   &__input{
     flex: 1;
     width: 100%;
-    background-color: rgba(rgb(46, 88, 86), .5);
+    background-color: rgba($color__recherche, 1);
     transition: all .3s;
     outline: none;
     border: none;
@@ -14,11 +14,11 @@
     margin: 0;
     border-radius: 5px;
     &:focus{
-      background-color: rgba(rgb(0, 192, 182), 1);
+      background-color: rgba($color__recherche-hover, 1);
     }
   }
   &__bouton{
-    background-color: rgba(rgba(183, 213, 212, 0), .5);
+    background-color: rgba(183, 213, 212, 0);
     position: absolute;
     top: 0;
     right: 0;

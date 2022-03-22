@@ -1,22 +1,24 @@
 /* ---------------- BACKGROUND */
-$color__background-body : #44a7a7;
-$color__background-main : #408181;
-$color__background-cours : hsl(184, 30%, 40%);
-$color__background-header : #408181;;
-$color__background-barre : #408181;
-$color__background-footer : #408181;;
-$color__background-link : #488286;
-$color__background-link-hover : #38c4ce;
+$color__background-body : #1B2A41;
+$color__background-main : #131d2c;
+$color__background-cours : #131d2c;
+$color__background-cours-hover : #CCC9DC;
+$color__background-header : #131d2c;
+$color__background-barre : #131d2c;
+$color__background-footer : #131d2c;
+$color__background-link : #131d2c;
+$color__background-link-hover : #CCC9DC;
+
 
 /* ---------------- LIENS */
-$color__link : #00ece4;
-$color__link-hover : #246b69;
-$color__link-visited : #00ece4;
+$color__link : #CCC9DC;
+$color__link-hover : #131d2c;
+$color__link-visited : #CCC9DC;
 
 /* ---------------- LIENS HEADER titre principal du site*/
-$color__link__header : #00ece4;
-$color__link__header-hover : #246b69;
-$color__link__header-visited : #00ece4;
+$color__link__header : #CCC9DC;
+$color__link__header-hover : #696c92;
+$color__link__header-visited : #CCC9DC;
 
 $color__link__principal:#3cafab;
 $color__link__principal-visited:#1d4d4b;
@@ -31,16 +33,21 @@ $color__link__footer-hover : #246b69;
 $color__link__footer-visited : #00ece4;
 
 /* ---------------- COULEUR FOOTER MENU*/
-$color__link__footer__menu:#3cafab;
-$color__link__footer__menu-visited:#1d4d4b;
-$color__link__footer__menu-hover:#44f1eb;
-$background__link__footer__menu:#1d4d4b;
-$background__link__footer__menu-visited:#2d8f8c;
-$background__link__footer__menu-hover:#3cafab;
+$color__link__footer__menu:#CCC9DC;
+$color__link__footer__menu-visited:#CCC9DC;
+$color__link__footer__menu-hover:#131d2c;
+$background__link__footer__menu:#131d2c;
+$background__link__footer__menu-visited:#131d2c;
+$background__link__footer__menu-hover:#CCC9DC;
 
 
 /* ---------------- FONT */
-$color__font-header : #B7D5D4;
-$color__font-main :#B7D5D4  ;
-$color__font-barre : #B7D5D4;
-$color__font-footer : #B7D5D4;
+$color__font-header : #CCC9DC;
+$color__font-main :#CCC9DC  ;
+$color__font-main-hover :#1B2A41  ;
+$color__font-barre : #CCC9DC;
+$color__font-footer : #CCC9DC;
+
+/* ---------------- RECHERCHE */
+$color__recherche-hover : #CCC9DC;
+$color__recherche : #0a0f18;

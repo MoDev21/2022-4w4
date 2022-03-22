@@ -2,6 +2,8 @@
     font-family: $font__titre;
     background-color: $color__background-footer;
     padding: 10px;
+    display: flex;
+
 
     &__menu{ // .site__footer__menu
 
@@ -9,6 +11,7 @@
         display: flex;
         list-style-type: none;
         justify-content: center;
+        flex-direction: column;
         .menu_item{ // .site__footer__menu__ul .menu-item
             margin: 10px 5px;
           a{ // .site__footer__menu__ul .menu-item a

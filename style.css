@@ -19,6 +19,7 @@ VARIABLES
 /* ---------------- LIENS FOOTER*/
 /* ---------------- COULEUR FOOTER MENU*/
 /* ---------------- FONT */
+/* ---------------- RECHERCHE */
 /*--------point de rupture des madies query*/
 /* ---------------------------------------------------------
 INITIALISATION
@@ -349,15 +350,16 @@ html {
 --------------------------------------------------------- */
 /*-------------------------------------------------------*/
 a {
-  color: #00ece4;
+  color: #CCC9DC;
+  text-decoration: none;
 }
 
 a:visited {
-  color: #00ece4;
+  color: #CCC9DC;
 }
 
 a:hover, a:focus, a:active {
-  color: #246b69;
+  color: rgba(19, 29, 44, 0.5);
 }
 
 a:focus {
@@ -389,15 +391,18 @@ a:hover, a:active {
 }
 
 .header__titre a {
-  color: #00ece4;
+  color: #CCC9DC;
+  font-family: "Saira", sans-serif;
+  text-decoration: none;
+  transition: 0.2s;
 }
 
 .header__titre a:visited {
-  color: #00ece4;
+  color: #CCC9DC;
 }
 
 .header__titre a:hover, .header__titre a:focus, .header__titre a:active {
-  color: #246b69;
+  color: #696c92;
 }
 
 .header__titre a:focus {
@@ -409,18 +414,19 @@ a:hover, a:active {
 }
 
 .site__footer .menu-item a {
-  color: #3cafab;
-  background-color: #1d4d4b;
+  color: #CCC9DC;
+  background-color: #131d2c;
+  border-radius: 10px;
 }
 
 .site__footer .menu-item a:visited {
-  color: #1d4d4b;
-  background-color: #2d8f8c;
+  color: #CCC9DC;
+  background-color: #131d2c;
 }
 
 .site__footer .menu-item a:hover, .site__footer .menu-item a:focus, .site__footer .menu-item a:active {
-  color: #44f1eb;
-  background-color: #3cafab;
+  color: #131d2c;
+  background-color: #CCC9DC;
 }
 
 .site__footer .menu-item a:focus {
@@ -460,15 +466,15 @@ COMPOSANTES
 .site__main {
   margin: 20px;
   padding: 10px 15px;
-  background-color: #408181;
+  background-color: #131d2c;
   border-radius: 5px;
 }
 
 .site__main, h3 {
   margin: 20px;
   padding: 10px 15px;
-  background-color: #408181;
-  color: darkturquoise;
+  background-color: #40818100;
+  color: #CCC9DC;
   border-radius: 5px;
 }
 
@@ -479,9 +485,11 @@ COMPOSANTES
 
 .formation__titre {
   font-size: 2rem;
-  color: #B7D5D4;
+  color: #CCC9DC;
   margin: 10px 0px;
   font-family: "Saira", sans-serif;
+  text-align: center;
+  text-decoration: none;
 }
 
 .formation__liste {
@@ -490,12 +498,14 @@ COMPOSANTES
 }
 
 .formation__cours {
-  background-color: #478185;
+  background-color: #131d2c;
+  color: #CCC9DC;
   border-radius: 5px;
   margin: 10px;
   display: flex;
   flex-direction: column;
   width: 100%;
+  animation: anim-entete 1s forwards;
   padding: 10px;
 }
 
@@ -511,9 +521,65 @@ COMPOSANTES
   }
 }
 
+@keyframes anim-entete {
+  0% {
+    transform: translateY(-100vh);
+  }
+  100% {
+    transform: translateY(0);
+    transition: ease-in;
+  }
+}
+
+.formation__cours:hover {
+  transition: 0.5s;
+  background-color: #CCC9DC;
+  color: #1B2A41;
+  border-radius: 5px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+}
+
+@media screen and (min-width: 800px) {
+  .formation__cours:hover {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .formation__cours:hover {
+    width: 30%;
+  }
+}
+
+.formation__cours:hover .cours__titre a {
+  font-size: 1.8rem;
+  color: #1B2A41;
+  font-family: "Saira", sans-serif;
+  text-align: center;
+  margin: 5px 0px;
+  transition: 0.5s;
+}
+
+.formation__cours:hover .cours__titre a:hover {
+  font-size: 1.9rem;
+  color: rgba(27, 42, 65, 0.5);
+}
+
+.formation__cours:hover .cours__sigle {
+  font-size: 1.2rem;
+  color: #1B2A41;
+  margin: 0;
+}
+
 .cours__titre {
-  font-size: 1.5rem;
-  color: #B7D5D4;
+  font-size: 1.8rem;
+  color: #CCC9DC;
+  font-family: "Saira", sans-serif;
+  text-align: center;
   margin: 5px 0px;
 }
 
@@ -528,8 +594,8 @@ COMPOSANTES
 }
 
 .site__header {
-  background-color: #408181;
-  color: #B7D5D4;
+  background-color: #131d2c;
+  color: #CCC9DC;
   padding-left: 10px;
   display: flex;
   flex-direction: column;
@@ -552,7 +618,7 @@ COMPOSANTES
 
 .site__header__titre h2 {
   font-size: clamp(1rem, 2vw, 4rem);
-  font-family: "Saira", sans-serif;
+  font-family: "Work Sans", sans-serif;
 }
 
 .site__header__util {
@@ -606,11 +672,12 @@ COMPOSANTES
   display: block;
   text-decoration: none;
   padding: 4px;
-  background-color: #488286;
+  background-color: #131d2c;
+  transition: 0.2s;
 }
 
 .menu-item a:hover {
-  background-color: #38c4ce;
+  background-color: #CCC9DC;
 }
 
 @media screen and (min-width: 800px) {
@@ -624,14 +691,16 @@ COMPOSANTES
 
 .site__footer {
   font-family: "Saira", sans-serif;
-  background-color: #408181;
+  background-color: #131d2c;
   padding: 10px;
+  display: flex;
 }
 
 .site__footer__menu__ul {
   display: flex;
   list-style-type: none;
   justify-content: center;
+  flex-direction: column;
 }
 
 .site__footer__menu__ul .menu_item {
@@ -655,12 +724,13 @@ COMPOSANTES
 .footer__titre,
 .footer__presentation,
 .footer__author {
-  color: #B7D5D4;
+  color: #CCC9DC;
   text-align: center;
 }
 
 .cours__contenu {
   display: flex;
+  font-size: 16pt;
 }
 
 .recherche {
@@ -672,7 +742,7 @@ COMPOSANTES
 .recherche__input {
   flex: 1;
   width: 100%;
-  background-color: rgba(46, 88, 86, 0.5);
+  background-color: #0a0f18;
   transition: all .3s;
   outline: none;
   border: none;
@@ -682,11 +752,11 @@ COMPOSANTES
 }
 
 .recherche__input:focus {
-  background-color: #00c0b6;
+  background-color: #ccc9dc;
 }
 
 .recherche__bouton {
-  background-color: rgba(183, 213, 212, 0.5);
+  background-color: rgba(183, 213, 212, 0);
   position: absolute;
   top: 0;
   right: 0;
@@ -713,18 +783,17 @@ ANIMATIONS
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  background-color: #2d6666;
-  color: darkturquoise;
-  font-size: 3rem;
+  color: #CCC9DC;
+  font-size: 5rem;
   animation: anim-entete 1s forwards;
 }
 
 @keyframes anim-entete {
   0% {
-    transform: translateY(-100vh);
+    transform: scale(0);
   }
   100% {
-    transform: translateY(0);
+    transform: scale(1);
     transition: ease-in;
   }
 }
@@ -736,28 +805,55 @@ LAYOUT
 theme name: Lab 4 Lemieux Florence
 */
 .site {
-  background-color: #44a7a7;
-  font-family: "Saira", sans-serif;
+  background-color: #1B2A41;
+  font-family: "Work Sans", sans-serif;
 }
 
 .site__header {
   grid-area: header;
-  background-color: #408181;
+  background-color: #131d2c;
 }
 
 .site__barre {
   grid-area: sidebar;
-  background-color: #408181;
+  background-color: #131d2c;
+  border-radius: 5px;
 }
 
 .site__main {
   grid-area: main;
-  background-color: #408181;
+  background-color: #131d2c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .site__footer {
   grid-area: footer;
-  background-color: #408181;
+  background-color: #131d2c;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  bottom: -200px;
+}
+
+.site__footer-colonnes {
+  grid-area: footer;
+  background-color: #131d2c;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+}
+
+.site__footer-colonnes {
+  grid-area: footer;
+  background-color: #131d2c;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
 }
 
 .site {
