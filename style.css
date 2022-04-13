@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-theme name: Tp1 Moïse Kaseka
+theme name: Ex3 Moïse Kaseka
 Author: Moïse Kaseka
 Author URL: https://github.com/MoDev21/2022-4w4
 Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/eddytuto/2022-4w4
@@ -20,6 +20,8 @@ VARIABLES
 /* ---------------- COULEUR FOOTER MENU*/
 /* ---------------- FONT */
 /* ---------------- RECHERCHE */
+/* ---------------- couleur bouton menu-catégorie cours*/
+/* ---------------- couleur titre principale*/
 /*--------point de rupture des madies query*/
 /* ---------------------------------------------------------
 INITIALISATION
@@ -348,6 +350,54 @@ html {
 /* ---------------------------------------------------------
 ÉLÉMENTS
 --------------------------------------------------------- */
+h1 {
+  font-size: clamp(2rem, 4vw, 5rem);
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2.8rem;
+}
+
+h4 {
+  font-size: 2.3rem;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+h6 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
+h1, h2 {
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #CCC9DC;
+}
+
+h3, h4 {
+  font-family: "Saira", sans-serif;
+  color: #CCC9DC;
+}
+
+h5, h6 {
+  font-family: "Work Sans", sans-serif;
+  color: #CCC9DC;
+}
+
+p {
+  font-family: "Work Sans", sans-serif;
+  color: #CCC9DC;
+}
+
 /*-------------------------------------------------------*/
 a {
   color: #CCC9DC;
@@ -487,7 +537,6 @@ COMPOSANTES
   font-size: 2rem;
   color: #CCC9DC;
   margin: 10px 0px;
-  font-family: "Saira", sans-serif;
   text-align: center;
   text-decoration: none;
 }
@@ -499,7 +548,8 @@ COMPOSANTES
 
 .formation__cours {
   background-color: #131d2c;
-  color: #CCC9DC;
+  background-repeat: no-repeat;
+  background-position: 93% 30%;
   border-radius: 5px;
   margin: 10px;
   display: flex;
@@ -558,7 +608,6 @@ COMPOSANTES
 .formation__cours:hover .cours__titre a {
   font-size: 1.8rem;
   color: #1B2A41;
-  font-family: "Saira", sans-serif;
   text-align: center;
   margin: 5px 0px;
   transition: 0.5s;
@@ -591,6 +640,30 @@ COMPOSANTES
 
 .cours__description {
   font-size: 1rem;
+}
+
+.jeu {
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=games");
+}
+
+.web {
+  background-image: url("https://s2.svgbox.net/hero-outline.svg?ic=globe");
+}
+
+.design {
+  background-image: url("https://s2.svgbox.net/materialui.svg?ic=design_services");
+}
+
+.creation-3d {
+  background-image: url("https://s2.svgbox.net/hero-outline.svg?ic=cube");
+}
+
+.video {
+  background-image: url("https://s2.svgbox.net/hero-outline.svg?ic=video-camera");
+}
+
+.uititaire {
+  background-image: url("https://s2.svgbox.net/hero-outline.svg?ic=cog");
 }
 
 .site__header {
@@ -687,6 +760,30 @@ COMPOSANTES
   .menu-principal-container {
     display: block;
   }
+}
+
+.menu-categorie_cours-container .menu {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+}
+
+.menu-categorie_cours-container .menu .menu-item {
+  margin: 0 15px;
+  background-color: #131d2c;
+}
+
+.menu-categorie_cours-container .menu .menu-item a {
+  color: #CCC9DC;
+  padding: 5px;
+}
+
+.menu-categorie_cours-container .menu .menu-item:hover {
+  background-color: #CCC9DC;
+}
+
+.menu-categorie_cours-container .menu .menu-item:hover a {
+  color: #131d2c;
 }
 
 .site__footer {

@@ -2,7 +2,8 @@
 
 function cidw_4w4_enqueue(){
     // wp_enqueue_style('style_css', get_stylesheet_uri());
-    wp_enqueue_style('4w4-le-style', get_template_directory_uri() . '/style.css', array(), filemtime(get_template_directory() . '/style.css'), false);
+    wp_enqueue_style('cidw-4w4-le-style', get_template_directory_uri() . '/style.css', array(), filemtime(get_template_directory() . '/style.css'), false);
+    wp_enqueue_style('cidw-4w4-police-google', "https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat+Alternates:wght@300&family=Saira:wght@100&family=Work+Sans&display=swap", false);
 }
 
 add_action("wp_enqueue_scripts", "cidw_4w4_enqueue");
@@ -12,9 +13,23 @@ function cidw_4w4_register_nav_menu(){
     register_nav_menus( array(
         'menu_principal' => __( 'Menu principal', 'cidw_4w4' ),
         'menu_footer'  => __( 'Menu footer', 'cidw_4w4' ),
+        'menu_externe' => __('Menu externe', 'cidw_4w4'),
+        'menu_categorie_cours' => __('Menu categorie_cours', 'cidw_4w4'),
+        'menu_accueil' => __('Menu accueil', 'cidw_4w4')
     ) );
 }
 add_action( 'after_setup_theme', 'cidw_4w4_register_nav_menu', 0 );
+
+/*----------------------------------afficher une description du choix de cours------*/
+function prefix_nav_description($item_output, $item){
+    if (!empty($item->description)){
+        $item_output = str_replace( '</a>',
+        '<hr><span class="menu-item-description">' . $item->description . '</span>' . '</a>' , 
+               $item_output );
+    }
+    return $item_output;
+}
+add_filter('walker_nav_menu_start_el', 'prefix_nav_description', 10, 3);
  
 /*----------------------------------filtrer les choix du menu principal--------*/
 function cidw_4w4_filtre_choix_menu($obj_menu){

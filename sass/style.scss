@@ -1,5 +1,5 @@
 /*
-theme name: Tp1 Moïse Kaseka
+theme name: Ex3 Moïse Kaseka
 Author: Moïse Kaseka
 Author URL: https://github.com/MoDev21/2022-4w4
 Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/eddytuto/2022-4w4
@@ -25,6 +25,7 @@ INITIALISATION
 /* ---------------------------------------------------------
 ÉLÉMENTS
 --------------------------------------------------------- */
+@import "elements/balise";
 @import "elements/links";
 
 /* ---------------------------------------------------------
@@ -33,6 +34,7 @@ COMPOSANTES
 @import "composantes/contenu";
 @import "composantes/header";
 @import "composantes/navigation";
+@import "composantes/navigation_categorie_cours";
 @import "composantes/footer";
 @import "composantes/single-cours";
 @import "composantes/recherche";

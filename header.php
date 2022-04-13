@@ -7,9 +7,7 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Saira&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Work+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat+Alternates:wght@300&family=Saira:wght@100&family=Work+Sans&display=swap" rel="stylesheet">
     <?php wp_head() ?>
 </head>
 <body  <?php body_class("site"); ?>>

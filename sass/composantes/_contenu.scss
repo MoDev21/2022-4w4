@@ -23,7 +23,6 @@
     font-size: 2rem;
     color: $color__font-main;
     margin: 10px 0px;
-    font-family: $font__titre;
     text-align: center;
     text-decoration: none;
 }
@@ -35,7 +34,8 @@
 
 .formation__cours {
     background-color: $color__background-cours;
-    color: $color__font-main;
+    background-repeat: no-repeat;
+    background-position: 93% 30%;
     border-radius: 5px;
     margin: 10px;
     display: flex;
@@ -82,7 +82,6 @@
     .cours__titre a{
         font-size: 1.8rem;
         color: $color__font-main-hover;
-        font-family: $font__titre;
         text-align: center;
         margin: 5px 0px;
         transition: 0.5s;
@@ -118,4 +117,28 @@
 
 .cours__description {
     font-size: 1rem;
+}
+
+.jeu {
+    background-image: url('https://s2.svgbox.net/materialui.svg?ic=games');
+}
+
+.web {
+    background-image: url('https://s2.svgbox.net/hero-outline.svg?ic=globe');
+}
+
+.design {
+    background-image: url('https://s2.svgbox.net/materialui.svg?ic=design_services');
+}
+
+.creation-3d {
+    background-image: url('https://s2.svgbox.net/hero-outline.svg?ic=cube');
+}
+
+.video {
+    background-image: url('https://s2.svgbox.net/hero-outline.svg?ic=video-camera');
+}
+
+.uititaire {
+    background-image: url('https://s2.svgbox.net/hero-outline.svg?ic=cog');
 }
