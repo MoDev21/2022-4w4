@@ -762,6 +762,56 @@ COMPOSANTES
   }
 }
 
+.menu-accueil-container .menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu-accueil-container .menu .accueil__cours .menu-item-icone {
+  background-image: url();
+}
+
+.menu-accueil-container .menu .menu-item {
+  width: 20%;
+  padding: 10px;
+  background-color: #131d2c;
+}
+
+.menu-accueil-container .menu .menu-item a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: #CCC9DC;
+  font-size: 1.5rem;
+  height: 100%;
+}
+
+.menu-accueil-container .menu .menu-item a hr {
+  width: 90%;
+}
+
+.menu-accueil-container .menu .menu-item a .menu-item-description {
+  font-size: 1rem;
+}
+
+.menu-accueil-container .menu .menu-item a .menu-item-icone {
+  border: 1px solid #aaa;
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.menu-accueil-container .menu .menu-item:hover {
+  background-color: #131d2c;
+}
+
+.menu-accueil-container .menu .menu-item:hover a {
+  color: #131d2c;
+}
+
 .menu-categorie_cours-container .menu {
   display: flex;
   list-style-type: none;

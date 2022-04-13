@@ -1,23 +1,53 @@
-.menu-menu_accueil-container{//nav
+.menu-accueil-container{//nav
     .menu{//ul
         display: flex;
         justify-content: space-around;
+        .accueil__cours .menu-item-icone{
+            background-image: url();
+        }
+        .accueil__prof .menu-item-icone{
+            
+        }
+        .accueil__etudiant .menu-item-icone{
+            
+        }
+        .accueil__aide .menu-item-icone{
+            
+        }
         .menu-item{//li
             width: 20%;
+            padding: 10px;
             background-color: $color__bouton__background;
             a{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
                 color: $color__bouton__color;
                 font-size: 1.5rem;
+                height: 100%;
+                hr {
+                    width: 90%;
+                }
                 .menu-item-description{//span
                     font-size: 1rem;
                 }
+                .menu-item-icone{//div
+                    border: 1px solid #aaa;
+                    width: 2rem;
+                    height: 2rem;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: cover;
+                }
+            }
+            &:hover{
+                background-color: $color__bouton__color-hover;
+                a{
+                    color: $color__bouton__color-hover;
+                }
             }
         }
-        &:hover{
-            background-color: $color__bouton__color-hover;
-            a{
-                color: $color__bouton__color-hover;
-            }
-        }
-    }
+
+    }// .acceil-menu-container
 }

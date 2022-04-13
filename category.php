@@ -2,7 +2,7 @@
 <main class="principal">
     <h1>category.php</h1> 
     <?php wp_nav_menu(array(
-        "menu" => "categorie_menu",
+        "menu" => "categorie_cours",
         "container" => "nav"
     )); ?>
     <section class="formation">
