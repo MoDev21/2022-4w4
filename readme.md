@@ -1,12 +1,13 @@
-# Exercice #1 - 4w4 - Conception d'interface et développement web
-### Auteur: Moïse Kaseka
-###
+# 4w4 - Conception d'interface et développement Web
+### Auteur : Moïse Kaseka
+### Semaine #12 cours #2: Boite modale
 
-```
+Développement des modules:
+ - search.php
+ - searchform.php
+Développement d'un nouveau mixin link_menu
 
-Cet exercice nous permit d'introduire la structure du thème Wordpress.
-Voici la structure utilisé:
--Pour le style css nous avons utilisé le sass
--Les function du thème se trouve dans « function.php »
+ Début d'une animation
 
-git comm
+Pour modifier readme.md
+https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax

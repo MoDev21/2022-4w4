@@ -1,117 +1,59 @@
 .site__main {
-    margin: 20px;
+    
     padding: 10px 15px;
     background-color: $color__background-main;
     border-radius: 5px;
+    box-shadow: rgb(57, 68, 62) 1px -1px 10px;
 }
-
-.site__main, h3 {
-    margin: 20px;
-    padding: 10px 15px;
-    background-color: #40818100;
-    color: $color__font-main;
-    border-radius: 5px;
-}
-
 
 .formation {
     display: flex;
     flex-direction: column;
-}
 
-.formation__titre {
-    font-size: 2rem;
-    color: $color__font-main;
-    margin: 10px 0px;
-    text-align: center;
-    text-decoration: none;
-}
-
-.formation__liste {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.formation__cours {
-    background-color: $color__background-cours;
-    background-repeat: no-repeat;
-    background-position: 93% 30%;
-    border-radius: 5px;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    animation: anim-entete 1s forwards;
-    @media screen and (min-width : $largeur__media--tablette){
-        width: 45%;
+    &__titre {   
+        margin: 10px 0px;
+      
     }
-    @media screen and (min-width : $largeur__media--desktop){
-        width: 30%;
-    }
-    padding: 10px;
-}
-
-@keyframes anim-entete {
-    0%{
-        transform: translateY(-100vh);  
-        
-    }
-    100%{
-        transform: translateY(0);
-        transition: ease-in;
-    }
-}
-
-.formation__cours:hover {
-    transition: 0.5s;
-    background-color: $color__background-cours-hover;
-    color: $color__font-main-hover;
-    border-radius: 5px;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    @media screen and (min-width : $largeur__media--tablette){
-        width: 45%;
-    }
-    @media screen and (min-width : $largeur__media--desktop){
-        width: 30%;
-    }
-    padding: 10px;
-
-    .cours__titre a{
-        font-size: 1.8rem;
-        color: $color__font-main-hover;
-        text-align: center;
-        margin: 5px 0px;
-        transition: 0.5s;
-    }
-
-    .cours__titre a:hover{
-        font-size: 1.9rem;
-        color: rgba($color__font-main-hover, 0.5);
+    &__liste {
+        display: flex;
+        flex-wrap: wrap;
     }
     
-
-    .cours__sigle {
-        font-size: 1.2rem;
-        color: $color__font-main-hover;
-        margin: 0;
+    &__cours {
+        background-repeat: no-repeat;
+        background-position: 97% 3%;
+        background-color: $color__background-cours;
+        box-shadow: rgb(57, 64, 68) 1px -1px 10px;
+        border-radius: 5px;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        @media screen and (min-width : $largeur__media--tablette){
+            width: 45%;
+        }
+        @media screen and (min-width : $largeur__media--desktop){
+            width: 30%;
+        }
+        padding: 10px;
     }
+
 
 }
 
+
+
+
+
 .cours__titre {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color: $color__font-main;
-    font-family: $font__titre;
-    text-align: center;
     margin: 5px 0px;
 }
 
 .cours__sigle {
     font-size: 1.2rem;
-    color: #b7d5d4;
+    color: rgb(138, 83, 83);
     margin: 0;
 }
 
@@ -119,26 +61,32 @@
     font-size: 1rem;
 }
 
-.jeu {
-    background-image: url('https://s2.svgbox.net/materialui.svg?ic=games');
-}
 
 .web {
-    background-image: url('https://s2.svgbox.net/hero-outline.svg?ic=globe');
+    background-image: url('https://s2.svgbox.net/octicons.svg?ic=globe');
+}
+.jeu{
+    background-image: url('https://s2.svgbox.net/materialui.svg?ic=games');
+    
 }
 
 .design {
-    background-image: url('https://s2.svgbox.net/materialui.svg?ic=design_services');
+    background-image: url('https://s2.svgbox.net/materialui.svg?ic=color_lens');
+    // 3d https://s2.svgbox.net/materialui.svg?ic=view_in_ar
+    // palette peinture https://s2.svgbox.net/materialui.svg?ic=color_lens
+    // image https://s2.svgbox.net/octicons.svg?ic=image
 }
-
-.creation-3d {
-    background-image: url('https://s2.svgbox.net/hero-outline.svg?ic=cube');
+.utilitaire{
+    background-image: url('https://s2.svgbox.net/octicons.svg?ic=tools-bold');
 }
-
 .video {
-    background-image: url('https://s2.svgbox.net/hero-outline.svg?ic=video-camera');
+    background-image: url('https://s2.svgbox.net/octicons.svg?ic=device-camera-video');
+    //https://s2.svgbox.net/materialui.svg?ic=movie
+    //camera https://s2.svgbox.net/materialui.svg?ic=voice_chat
+    // camera video https://s2.svgbox.net/octicons.svg?ic=device-camera-video
+    // video https://s2.svgbox.net/materialui.svg?ic=duo
 }
-
-.uititaire {
-    background-image: url('https://s2.svgbox.net/hero-outline.svg?ic=cog');
+.creation-3d {
+    background-image: url('https://s2.svgbox.net/materialui.svg?ic=view_in_ar');
+    
 }

@@ -1,70 +1,60 @@
 /*
-theme name: Lab 4 Lemieux Florence
+theme name: Lab 2 Lemieux Florence
 */
 
 .site {
     //background-color: rgb(122, 176, 207);
-    background-color: $color__background-body;
+    background-color: rgba($color__background-body,.5);
     font-family: $font__main;
+    max-width : 100vw;
+}
+
+.home::after{
+    content : "";
+    position : absolute;
+    width : 100%;
+    height : 100%;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color: $color__background-body-clip;
+   
+    z-index: -1;
+    clip-path: polygon(87% 0, 100% 0, 100% 100%, 58% 100%);
 }
 
 
 
 .site__header{
     grid-area: header;  
-    background-color: $color__background-header;
+    background-color: rgba($color__background-header, .5);
+
+
 }
 
 .site__barre{
     grid-area: sidebar;
     background-color: $color__background-barre;
-    border-radius: 5px;
-
 }
 
 .site__main{
     grid-area: main;
-    background-color: $color__background-main;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background-color: rgba($color__background-main, .5);
 }
 
 .site__footer{
     grid-area: footer;
     background-color: $color__background-footer;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    position: relative;
-    bottom: -200px;
 }
-
-.site__footer-colonnes{
-    grid-area: footer;
-    background-color: $color__background-footer;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    position: relative;
-}
-
-.site__footer-colonnes{
-    grid-area: footer;
-    background-color: $color__background-footer;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    position: relative;
-}
-
+/* configuration mobile */
 .site {
 	display: grid;
-    gap: 10px;
+    gap : 0px;
 	grid-template-columns: auto;
 	grid-template-areas:
-        "sidebar"
-		"header"
+		"sidebar"
+        "header"
 		"main"
 		"footer";
 }
@@ -78,6 +68,19 @@ theme name: Lab 4 Lemieux Florence
             "sidebar main"
             "footer footer";
     }
+
+    .home {
+        display: grid;
+        gap : 0px;
+        grid-template-columns: auto;
+        grid-template-areas:
+            "sidebar"
+            "header"
+            "main"
+            "footer";
+    }
+
+
 }
 
 

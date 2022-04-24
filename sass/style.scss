@@ -1,7 +1,7 @@
 /*
-theme name: Ex3 Moïse Kaseka
+theme name: groupe__3 moïse kaseka
 Author: Moïse Kaseka
-Author URL: https://github.com/MoDev21/2022-4w4
+Author URI: https://github.com/MoDev21/2022-4w4
 Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/eddytuto/2022-4w4
 Version: 1.0.0
 License: GNU General Public License v2 or later
@@ -21,12 +21,16 @@ INITIALISATION
 --------------------------------------------------------- */
 @import "initialisation/normalize";
 @import "initialisation/box-sizing";
+/* --------------------------------------------------------
+LAYOUT
+--------------------------------------------------------- */
+@import "layout/layout";
 
 /* ---------------------------------------------------------
 ÉLÉMENTS
 --------------------------------------------------------- */
-@import "elements/balise";
 @import "elements/links";
+@import "elements/balise";
 
 /* ---------------------------------------------------------
 COMPOSANTES
@@ -36,14 +40,14 @@ COMPOSANTES
 @import "composantes/navigation";
 @import "composantes/navigation_accueil";
 @import "composantes/navigation_categorie_cours";
+@import "composantes/boite_modale";
+/* ---------------------------------------------------- FOOTER */
 @import "composantes/footer";
-@import "composantes/single-cours";
+@import "composantes/single_cours";
+/* ---------------------------------------------------- RECHERCHE */
 @import "composantes/recherche";
 /* ---------------------------------------------------------
-ANIMATIONS
+ANIMATION
 --------------------------------------------------------- */
-@import "animations/entete";
-/* ---------------------------------------------------------
-LAYOUT
---------------------------------------------------------- */
-@import "layout/layout";
+@import "animation/entete";
+

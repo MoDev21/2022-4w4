@@ -1,7 +1,7 @@
-@mixin links($couleur, 
-			 $couleur--visited, 
-			 $couleur--hover) {
-
+@mixin links(	$couleur, 
+				$couleur--visited, 
+				$couleur--hover)
+{
 	color: $couleur;
 
 	&:visited {
@@ -24,28 +24,27 @@
 	}
 }
 
-/*-------------------------------------------------------*/
-
-@mixin links__menu ($couleur, 
-			 $couleur--visited, 
-			 $couleur--hover,
-			 $background, 
-			 $background--visited, 
-			 $background--hover) {
-
+/* ---------------------------------- */
+@mixin links__menu(	$couleur, 
+				$couleur--visited, 
+				$couleur--hover,
+				$background, 
+				$background--visited, 
+				$background--hover)
+{
 	color: $couleur;
-	background-color: $background;
+	background-color:  $background;
 
 	&:visited {
 		color: $couleur--visited;
-		background-color: $background--visited;
+		background-color:  $background--visited;
 	}
 
 	&:hover,
 	&:focus,
 	&:active {
 		color: $couleur--hover;
-		background-color: $background--hover;
+		background-color:  $background--hover;
 	}
 
 	&:focus {
@@ -58,43 +57,45 @@
 	}
 }
 
-a{
-	@include links( $color__link, 
+
+
+/* -----------------------------------*/
+a {
+	@include links(	$color__link,
 					$color__link-visited, 
-					rgba($color__link-hover, 0.5));
-	text-decoration: none;
+					$color__link-hover )
 }
 
-.site__footer a{
-	@include links( $color__link__footer, 
+ .site__footer a{
+	@include links(	$color__link__footer,
 					$color__link__footer-visited, 
-					$color__link__footer-hover);
+					$color__link__footer-hover );
 }
- 
+
 .header__titre a{
-	@include links( $color__link__header, 
+	@include links(	$color__link__header,
 					$color__link__header-visited, 
-					$color__link__header-hover);
-	font-family: $font__titre;
-	text-decoration: none;
-	transition: 0.2s;
+					$color__link__header-hover );
 }
+
 
 .site__footer .menu-item a{
-	@include links__menu ( 	$color__link__footer__menu, 
+	@include links__menu (	$color__link__footer__menu,
 							$color__link__footer__menu-visited, 
 							$color__link__footer__menu-hover,
-							$background__link__footer__menu, 
+							$background__link__footer__menu,
 							$background__link__footer__menu-visited, 
 							$background__link__footer__menu-hover);
-	border-radius: 10px;
 }
 
-.menu-principal .menu-item a{
-	@include links__menu ( 	$color__link__principal, 
-							$color__link__principal-visited, 
-							$color__link__principal-hover,
-							$background__link__principal, 
-							$background__link__principal-visited, 
-							$background__link__principal-hover);
+.menu-principal .menu-item a {
+	@include links__menu (	$color__link__menu__principal,
+	$color__link__menu__principal-visited, 
+	$color__link__menu__principal-hover,
+	$background__link__menu__principal,
+	$background__link__menu__principal-visited, 
+	$background__link__menu__principal-hover);
 }
+
+
+
