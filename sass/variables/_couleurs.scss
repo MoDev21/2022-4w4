@@ -1,33 +1,34 @@
 /* ---------------- BACKGROUND */
-$color__background-body : hsl(224, 44%, 90%);
-$color__background-body-clip : hsl(204, 78%, 65%);
-$color__background-main : hsl(204, 49%, 89%);
-$color__background-cours : hsl(209, 100%, 91%);
-$color__background-header : hsl(207, 66%, 66%);
-$color__background-barre : hsl(200, 78%, 9%);
-$color__background-footer : hsl(225, 78%, 13%);
-$color__background-link : hsl(227, 22%, 84%);
-$color__background-link-hover : hsl(236, 64%, 44%);
+$color__background-body : #1B2A41;
+$color__background-body-clip : #273d60;
+$color__background-main : #131d2c;
+$color__background-cours : #131d2c;
+$color__background-cours-hover : #CCC9DC;
+$color__background-header : #131d2c;
+$color__background-barre : #131d2c;
+$color__background-footer : #131d2c;
+$color__background-link : #131d2c;
+$color__background-link-hover : #CCC9DC;
 
 /* ---------------- LIENS */
-$color__link : hsl(18, 27%, 38%);
-$color__link-hover : hsl(0, 0%, 100%);
-$color__link-visited : hsl(19, 29%, 28%);
+$color__link : #CCC9DC;
+$color__link-hover : #131d2c;
+$color__link-visited : #CCC9DC;
 /* ---------------- LIENS FOOTER */
-$color__link__footer : hsl(0, 91%, 50%);
-$color__link__footer-hover : hsl(123, 80%, 49%);
-$color__link__footer-visited : hsl(231, 84%, 50%);
+$color__link__footer : #00ece4;
+$color__link__footer-hover : #246b69;
+$color__link__footer-visited : #00ece4;
 /* ---------------- LIENS HEADER titre principal du site */
-$color__link__header : hsl(0, 82%, 68%);
-$color__link__header-hover : hsl(123, 63%, 72%);
-$color__link__header-visited : hsl(261, 62%, 56%);
+$color__link__header : #CCC9DC;
+$color__link__header-hover : #696c92;
+$color__link__header-visited : #CCC9DC;
 /* ----------------------- couleur menu footer */
-$color__link__footer__menu : #fff;
-$color__link__footer__menu-visited : #ddd;
-$color__link__footer__menu-hover: #f00;
-$background__link__footer__menu : #444;
-$background__link__footer__menu-visited : #555; 
-$background__link__footer__menu-hover: #222;
+$color__link__footer__menu:#CCC9DC;
+$color__link__footer__menu-visited:#CCC9DC;
+$color__link__footer__menu-hover:#131d2c;
+$background__link__footer__menu:#131d2c;
+$background__link__footer__menu-visited:#131d2c;
+$background__link__footer__menu-hover:#CCC9DC;
 
 /* ----------------------- couleur menu principal */
 $color__link__menu__principal : #0f0;
@@ -40,27 +41,36 @@ $background__link__menu__principal-hover : #ddd;
 
 
 /* ---------------- FONT */
-$color__font-header : rgb(214, 216, 228);
-$color__font-main :rgb(219, 223, 243);
-$color__font-barre : rgb(208, 216, 240);
-$color__font-footer : rgb(226, 231, 248);
+$color__font-header : #CCC9DC;
+$color__font-main :#CCC9DC  ;
+$color__font-main-hover :#1B2A41  ;
+$color__font-barre : #CCC9DC;
+$color__font-footer : #CCC9DC;
 
+/* ---------------- RECHERCHE */
+$color__recherche-hover : #CCC9DC;
+$color__recherche : #0a0f18;
 
-/* ----------------------- couleur bouton menu-catégorie cours */
-$color__bouton__color : rgb(238, 215, 11);
-$color__bouton__background : rgb(68, 124, 187); 
-$color__bouton__color--hover : rgb(236, 229, 127);
-$color__bouton__background--hover :  rgb(53, 82, 161); 
-$color__bouton__color--current: rgb(254, 207, 0);
-$color__bouton__background--current: rgb(8, 24, 67);
+/* ---------------- couleur bouton menu-catégorie cours*/
+$color__bouton__color : #CCC9DC;
+$color__bouton__background : #131d2c;
+$color__bouton__color--hover : #131d2c   ;
+$color__bouton__background--hover : #CCC9DC;
+$color__bouton__color--current : #131d2c;
+$color__bouton__background--current : #ccc9dc86;
 
-/* --------------------------  couleur titre */
-$color__titre__principal : rgb(7, 4, 51);
-$color__titre__secondaire : rgb(38, 35, 78);
-$color__titre__ternaire : rgb(35, 33, 73);
+/* ---------------- couleur titre principale*/
+$color__titre__principal : #CCC9DC;
+$color__titre__secondaire : #CCC9DC;
+$color__titre__ternaire : #CCC9DC;
+$color__titre__paragraphe : #CCC9DC;
 
 /* -----------------------------------------  carte d'accueil */
-$couleur__carte__evenement: rgb(255, 204, 0);
-$couleur__carte__evenement__background: rgb(12, 10, 71);
-$couleur__carte__evenement--hover: rgb(199, 179, 99);
-$couleur__carte__evenement__background--hover: rgb(0, 42, 255);
+$couleur__carte__evenement: #CCC9DC;;
+$couleur__carte__evenement__background: #131d2c;
+$couleur__carte__evenement--hover: #131d2c;
+$couleur__carte__evenement__background--hover: #CCC9DC;
+
+/* -----------------------------------------  heures */
+$couleur__nbheures: #CCC9DC;
+$couleur__nbheures--hover: #131d2c;

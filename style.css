@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-theme name: groupe__3 moïse kaseka
+theme name: Exer4 moïse kaseka
 Author: Moïse Kaseka
 Author URI: https://github.com/MoDev21/2022-4w4
 Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/eddytuto/2022-4w4
@@ -20,9 +20,11 @@ VARIABLES
 /* ----------------------- couleur menu footer */
 /* ----------------------- couleur menu principal */
 /* ---------------- FONT */
-/* ----------------------- couleur bouton menu-catégorie cours */
-/* --------------------------  couleur titre */
+/* ---------------- RECHERCHE */
+/* ---------------- couleur bouton menu-catégorie cours*/
+/* ---------------- couleur titre principale*/
 /* -----------------------------------------  carte d'accueil */
+/* -----------------------------------------  heures */
 /* ------------------------------------- points de rupture des media queries */
 /* ---------------------------------------------------------
 INITIALISATION
@@ -355,8 +357,8 @@ LAYOUT
 theme name: Lab 2 Lemieux Florence
 */
 .site {
-  background-color: rgba(218, 224, 241, 0.5);
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: #1B2A41;
+  font-family: "Work Sans", sans-serif;
   max-width: 100vw;
 }
 
@@ -369,29 +371,29 @@ theme name: Lab 2 Lemieux Florence
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #60b4eb;
+  background-color: #273d60;
   z-index: -1;
   clip-path: polygon(87% 0, 100% 0, 100% 100%, 58% 100%);
 }
 
 .site__header {
   grid-area: header;
-  background-color: rgba(111, 174, 226, 0.5);
+  background-color: rgba(19, 29, 44, 0.5);
 }
 
 .site__barre {
   grid-area: sidebar;
-  background-color: #051d29;
+  background-color: #131d2c;
 }
 
 .site__main {
   grid-area: main;
-  background-color: rgba(213, 230, 241, 0.5);
+  background-color: rgba(19, 29, 44, 0.5);
 }
 
 .site__footer {
   grid-area: footer;
-  background-color: #07143b;
+  background-color: #131d2c;
 }
 
 /* configuration mobile */
@@ -421,15 +423,15 @@ theme name: Lab 2 Lemieux Florence
 /* ---------------------------------- */
 /* -----------------------------------*/
 a {
-  color: #7b5647;
+  color: #CCC9DC;
 }
 
 a:visited {
-  color: #5c4033;
+  color: #CCC9DC;
 }
 
 a:hover, a:focus, a:active {
-  color: white;
+  color: #131d2c;
 }
 
 a:focus {
@@ -441,15 +443,15 @@ a:hover, a:active {
 }
 
 .site__footer a {
-  color: #f40b0b;
+  color: #00ece4;
 }
 
 .site__footer a:visited {
-  color: #1435eb;
+  color: #00ece4;
 }
 
 .site__footer a:hover, .site__footer a:focus, .site__footer a:active {
-  color: #19e123;
+  color: #246b69;
 }
 
 .site__footer a:focus {
@@ -461,15 +463,15 @@ a:hover, a:active {
 }
 
 .header__titre a {
-  color: #f06a6a;
+  color: #CCC9DC;
 }
 
 .header__titre a:visited {
-  color: #7a49d4;
+  color: #CCC9DC;
 }
 
 .header__titre a:hover, .header__titre a:focus, .header__titre a:active {
-  color: #8be58f;
+  color: #696c92;
 }
 
 .header__titre a:focus {
@@ -481,18 +483,18 @@ a:hover, a:active {
 }
 
 .site__footer .menu-item a {
-  color: #fff;
-  background-color: #444;
+  color: #CCC9DC;
+  background-color: #131d2c;
 }
 
 .site__footer .menu-item a:visited {
-  color: #ddd;
-  background-color: #555;
+  color: #CCC9DC;
+  background-color: #131d2c;
 }
 
 .site__footer .menu-item a:hover, .site__footer .menu-item a:focus, .site__footer .menu-item a:active {
-  color: #f00;
-  background-color: #222;
+  color: #131d2c;
+  background-color: #CCC9DC;
 }
 
 .site__footer .menu-item a:focus {
@@ -555,21 +557,23 @@ p {
 }
 
 h1, h2 {
-  font-family: "Montserrat", sans-serif;
-  color: #070433;
+  font-family: "Montserrat Alternates", sans-serif;
+  color: #CCC9DC;
 }
 
 h3, h4 {
-  font-family: "Poppins", sans-serif;
-  color: #26234e;
+  font-family: "Saira", sans-serif;
+  color: #CCC9DC;
 }
 
 h5, h6 {
-  font-family: "Roboto", sans-serif;
+  font-family: "Work Sans", sans-serif;
+  color: #CCC9DC;
 }
 
 p {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-family: "Work Sans", sans-serif;
+  color: #CCC9DC;
 }
 
 /* ---------------------------------------------------------
@@ -577,7 +581,7 @@ COMPOSANTES
 --------------------------------------------------------- */
 .site__main {
   padding: 10px 15px;
-  background-color: #d5e6f1;
+  background-color: #131d2c;
   border-radius: 5px;
   box-shadow: #39443e 1px -1px 10px;
 }
@@ -599,7 +603,7 @@ COMPOSANTES
 .formation__cours {
   background-repeat: no-repeat;
   background-position: 97% 3%;
-  background-color: #d1e9ff;
+  background-color: #131d2c;
   box-shadow: #394044 1px -1px 10px;
   border-radius: 5px;
   margin: 10px;
@@ -623,7 +627,7 @@ COMPOSANTES
 
 .cours__titre {
   font-size: 1.5rem;
-  color: #dbdff3;
+  color: #CCC9DC;
   margin: 5px 0px;
 }
 
@@ -665,8 +669,8 @@ COMPOSANTES
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #6faee2;
-  color: #d6d8e4;
+  background-color: #131d2c;
+  color: #CCC9DC;
   padding-left: 10px;
 }
 
@@ -688,12 +692,12 @@ COMPOSANTES
 
 .site__header .header__titre {
   font-size: clamp(3rem, 4vw, 8rem);
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  font-family: "Saira", sans-serif;
 }
 
 .site__header .header__description {
   font-size: clamp(2rem, 2vw, 3rem);
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Work Sans", sans-serif;
 }
 
 .util {
@@ -828,35 +832,35 @@ COMPOSANTES
 }
 
 .menu-accueil-container .menu-item {
-  background-color: #447cbb;
+  background-color: #131d2c;
 }
 
 .menu-accueil-container .menu-item a {
-  color: #eed70b;
+  color: #CCC9DC;
 }
 
 .menu-accueil-container .menu-item:hover {
-  background-color: #3552a1;
+  background-color: #CCC9DC;
 }
 
 .menu-accueil-container .menu-item:hover a {
-  color: #ece57f;
+  color: #131d2c;
 }
 
 .menu-evenement-container .menu-item {
-  background-color: #0c0a47;
+  background-color: #131d2c;
 }
 
 .menu-evenement-container .menu-item a {
-  color: #ffcc00;
+  color: #CCC9DC;
 }
 
 .menu-evenement-container .menu-item:hover {
-  background-color: #002aff;
+  background-color: #CCC9DC;
 }
 
 .menu-evenement-container .menu-item:hover a {
-  color: #c7b363;
+  color: #131d2c;
 }
 
 .menu-categorie_cours-container .menu {
@@ -866,28 +870,28 @@ COMPOSANTES
 
 .menu-categorie_cours-container .menu .menu-item {
   margin: 0 15px;
-  background-color: #447cbb;
+  background-color: #131d2c;
 }
 
 .menu-categorie_cours-container .menu .menu-item a {
-  color: #eed70b;
+  color: #CCC9DC;
   padding: 5px;
 }
 
 .menu-categorie_cours-container .menu .menu-item:hover {
-  background-color: #3552a1;
+  background-color: #CCC9DC;
 }
 
 .menu-categorie_cours-container .menu .menu-item:hover a {
-  color: #ece57f;
+  color: #131d2c;
 }
 
 .menu-categorie_cours-container .menu .current-menu-item {
-  background-color: #081843;
+  background-color: #ccc9dc86;
 }
 
 .menu-categorie_cours-container .menu .current-menu-item a {
-  color: #fecf00;
+  color: #131d2c;
 }
 
 .boite__modale {
@@ -908,9 +912,9 @@ COMPOSANTES
 
 /* ---------------------------------------------------- FOOTER */
 .site__footer {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  background-color: #07143b;
-  color: #e2e7f8;
+  font-family: "Saira", sans-serif;
+  background-color: #131d2c;
+  color: #CCC9DC;
   padding: 15px;
 }
 
@@ -968,11 +972,11 @@ COMPOSANTES
 }
 
 .footer__menu__nav__ul .menu-item a svg {
-  color: #f40b0b;
+  color: #00ece4;
 }
 
 .footer__menu__nav__ul .menu-item a:hover svg {
-  color: #19e123;
+  color: #246b69;
 }
 
 .cours__contenu {
