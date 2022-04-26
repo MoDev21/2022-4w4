@@ -581,10 +581,18 @@ p {
 COMPOSANTES
 --------------------------------------------------------- */
 .site__main {
+  margin: 20px;
   padding: 10px 15px;
   background-color: #131d2c;
   border-radius: 5px;
-  box-shadow: #39443e 1px -1px 10px;
+}
+
+.site__main, h3 {
+  margin: 20px;
+  padding: 10px 15px;
+  background-color: #40818100;
+  color: #CCC9DC;
+  border-radius: 5px;
 }
 
 .formation {
@@ -593,7 +601,11 @@ COMPOSANTES
 }
 
 .formation__titre {
+  font-size: 2rem;
+  color: #CCC9DC;
   margin: 10px 0px;
+  text-align: center;
+  text-decoration: none;
 }
 
 .formation__liste {
@@ -602,15 +614,15 @@ COMPOSANTES
 }
 
 .formation__cours {
-  background-repeat: no-repeat;
-  background-position: 97% 3%;
   background-color: #131d2c;
-  box-shadow: #394044 1px -1px 10px;
+  background-repeat: no-repeat;
+  background-position: 93% 30%;
   border-radius: 5px;
   margin: 10px;
   display: flex;
   flex-direction: column;
   width: 100%;
+  animation: anim-entete 1s forwards;
   padding: 10px;
 }
 
@@ -624,6 +636,71 @@ COMPOSANTES
   .formation__cours {
     width: 30%;
   }
+}
+
+.formation__cours .cours__nbre-heure {
+  color: #CCC9DC;
+}
+
+@keyframes anim-entete {
+  0% {
+    transform: translateY(-100vh);
+  }
+  100% {
+    transform: translateY(0);
+    transition: ease-in;
+  }
+}
+
+.formation__cours:hover {
+  transition: 0.5s;
+  background-color: #CCC9DC;
+  color: #1B2A41;
+  border-radius: 5px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px;
+}
+
+@media screen and (min-width: 800px) {
+  .formation__cours:hover {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .formation__cours:hover {
+    width: 30%;
+  }
+}
+
+.formation__cours:hover p {
+  color: #1B2A41;
+}
+
+.formation__cours:hover .cours__titre a {
+  font-size: 1.8rem;
+  color: #1B2A41;
+  text-align: center;
+  margin: 5px 0px;
+  transition: 0.5s;
+}
+
+.formation__cours:hover .cours__titre a:hover {
+  font-size: 1.9rem;
+  color: rgba(27, 42, 65, 0.5);
+}
+
+.formation__cours:hover .cours__sigle {
+  font-size: 1.2rem;
+  color: #1B2A41;
+  margin: 0;
+}
+
+.formation__cours:hover .cours__nbre-heure {
+  color: #131d2c;
 }
 
 .cours__titre {
