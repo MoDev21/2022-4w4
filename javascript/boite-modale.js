@@ -11,7 +11,12 @@
         bouton.addEventListener('mousedown', function(){
             console.log(this.tagName)
             boite__modale.classList.add('boite__modale__ouvrir')
+            //let cours__desc = document.querySelector("cours__desc").textContent;
+            console.log(this.cours__desc)
             console.log(this.parentNode.parentNode.children[0].innerHTML)
+            boite__modale__texte.innerHTML = this.parentNode.parentNode.children[0].innerHTML;
+            
+            
             // boite__modale__texte.innerHTML = 
             // remove contraire de add
             // console.log(boite__modale.classList)
