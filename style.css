@@ -25,6 +25,7 @@ VARIABLES
 /* ---------------- couleur titre principale*/
 /* -----------------------------------------  carte d'accueil */
 /* -----------------------------------------  heures */
+/* -----------------------------------------  Boite-modale */
 /* ------------------------------------- points de rupture des media queries */
 /* ---------------------------------------------------------
 INITIALISATION
@@ -898,8 +899,8 @@ COMPOSANTES
   position: fixed;
   width: 50%;
   height: 50%;
-  border: 10px solid #aaa;
-  background-color: aqua;
+  background-color: #CCC9DC;
+  color: #131d2c;
   top: 25%;
   left: 25%;
   transform: scale(0);

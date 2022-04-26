@@ -2,8 +2,8 @@
     position : fixed;
     width: 50%;
     height : 50%;
-    border : 10px solid #aaa;
-    background-color: aqua;
+    background-color: $couleur__Boite-modale__background;
+    color: $couleur__Boite-modale;
     top:25%;
     left:25%;
     transform : scale(0);
