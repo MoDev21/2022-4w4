@@ -905,6 +905,8 @@ COMPOSANTES
   left: 25%;
   transform: scale(0);
   transition: all 1s ease-in-out;
+  border-radius: 2%;
+  box-shadow: 1px;
 }
 
 .boite__modale__ouvrir {
