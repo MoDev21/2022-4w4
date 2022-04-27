@@ -27,7 +27,7 @@
     </section>
     <section class="util">
         <?= get_sidebar('entete_1'); ?>    
-        <?php // get_search_form(); ?>
+        <?php get_search_form(); ?>
     </section>
 </header>
 <section class="site__barre">

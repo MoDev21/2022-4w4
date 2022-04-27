@@ -4,10 +4,12 @@
     background-color: $color__background-footer;
     color: $color__font-footer;
     padding: 15px;
+    display: flex;
   // les colonnes du pied de page 
     &__colonne { //.site__footer__colonne
-        display :flex;
-        flex-direction : column;
+        flex-direction: row;
+        justify-content: space-between;
+        list-style: none;
         section {
           flex : 0 0 100%;
           border : 1px solid #aaa;
