@@ -446,7 +446,10 @@ a:hover, a:active {
 
 .site__footer a {
   color: #00ece4;
-list-style: none;text-decoration: none;}
+  color: #00ece4;
+  list-style: none;
+  text-decoration: none;
+}
 
 .site__footer a:visited {
   color: #00ece4;
@@ -594,7 +597,10 @@ COMPOSANTES
   background-color: #40818100;
   color: #CCC9DC;
   border-radius: 5px;
-display: flex;flex-direction: column;align-items: center;}
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 .formation {
   display: flex;
@@ -730,7 +736,7 @@ display: flex;flex-direction: column;align-items: center;}
 
 .design {
   background-image: url("https://s2.svgbox.net/materialui.svg?ic=color_lens");
-display: flex;}
+}
 
 .utilitaire {
   background-image: url("https://s2.svgbox.net/octicons.svg?ic=tools-bold");
@@ -997,11 +1003,13 @@ display: flex;}
   background-color: #131d2c;
   color: #CCC9DC;
   padding: 15px;
-display: flex;}
+  display: flex;
+}
 
 .site__footer__colonne {
-  display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
 }
 
 .site__footer__colonne section {
@@ -1013,7 +1021,7 @@ display: flex;}
   .site__footer__colonne {
     flex-direction: row;
     justify-content: space-between;
-  list-style: none;}
+  }
   .site__footer__colonne section {
     flex: 0 0 30%;
   }
@@ -1023,19 +1031,32 @@ display: flex;}
   border-style: none;
   background-color: #0e1520;
   border-radius: 5px;
-list-style: none;}
+  justify-content: flex-start;
+  align-content: flex-start;
+  flex-direction: column;
+  align-items: stretch;
+}
 
 .site__footer__colonne .footer__article {
   border-style: none;
   background-color: #0e1520;
   border-radius: 5px;
+  justify-content: flex-start;
+  align-content: flex-start;
+  flex-direction: column;
+  align-items: stretch;
 }
 
 .site__footer__colonne .footer__lien {
   border-style: none;
   background-color: #0e1520;
   border-radius: 5px;
-display: flex;justify-content: flex-start;align-content: flex-start;flex-direction: column;align-items: stretch;}
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+  flex-direction: column;
+  align-items: stretch;
+}
 
 .site__footer__ligne {
   display: flex;
