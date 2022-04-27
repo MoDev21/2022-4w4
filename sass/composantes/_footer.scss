@@ -23,9 +23,20 @@
         }
    
         .footer__adresse{ //.site__footer__colonne .footer__adresse 
+          border-style: none;
+          background-color: $couleur__widget__background;
+          border-radius: 5px;
          }
-        .footer__article { }
-        .footer__lien { }
+        .footer__article {
+          border-style: none;
+          background-color: $couleur__widget__background;
+          border-radius: 5px;
+         }
+        .footer__lien {
+          border-style: none;
+          background-color: $couleur__widget__background;
+          border-radius: 5px;
+         }
     }
 // les lignes du pied de page
     &__ligne { //.site__footer__ligne

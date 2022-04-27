@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-theme name: Lab6 moïse kaseka
+theme name: Exer4 moïse kaseka
 Author: Moïse Kaseka
 Author URI: https://github.com/MoDev21/2022-4w4
 Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/eddytuto/2022-4w4
@@ -26,6 +26,7 @@ VARIABLES
 /* -----------------------------------------  carte d'accueil */
 /* -----------------------------------------  heures */
 /* -----------------------------------------  Boite-modale */
+/* -----------------------------------------  Widget */
 /* ------------------------------------- points de rupture des media queries */
 /* ---------------------------------------------------------
 INITIALISATION
@@ -1016,6 +1017,24 @@ COMPOSANTES
   .site__footer__colonne section {
     flex: 0 0 30%;
   }
+}
+
+.site__footer__colonne .footer__adresse {
+  border-style: none;
+  background-color: #0e1520;
+  border-radius: 5px;
+}
+
+.site__footer__colonne .footer__article {
+  border-style: none;
+  background-color: #0e1520;
+  border-radius: 5px;
+}
+
+.site__footer__colonne .footer__lien {
+  border-style: none;
+  background-color: #0e1520;
+  border-radius: 5px;
 }
 
 .site__footer__ligne {
