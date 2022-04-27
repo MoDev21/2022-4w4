@@ -1035,7 +1035,7 @@ list-style: none;}
   border-style: none;
   background-color: #0e1520;
   border-radius: 5px;
-display: flex;justify-content: flex-start;align-content: flex-start;flex-direction: row;align-items: stretch;}
+display: flex;justify-content: flex-start;align-content: flex-start;flex-direction: column;align-items: stretch;}
 
 .site__footer__ligne {
   display: flex;

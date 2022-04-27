@@ -28,16 +28,29 @@
           border-style: none;
           background-color: $couleur__widget__background;
           border-radius: 5px;
+          justify-content: flex-start;
+          align-content: flex-start;
+          flex-direction: column;
+          align-items: stretch;
          }
         .footer__article {
           border-style: none;
           background-color: $couleur__widget__background;
           border-radius: 5px;
+          justify-content: flex-start;
+          align-content: flex-start;
+          flex-direction: column;
+          align-items: stretch;
          }
         .footer__lien {
           border-style: none;
           background-color: $couleur__widget__background;
           border-radius: 5px;
+          display: flex;
+          justify-content: flex-start;
+          align-content: flex-start;
+          flex-direction: column;
+          align-items: stretch;
          }
     }
 // les lignes du pied de page
