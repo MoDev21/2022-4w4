@@ -70,6 +70,9 @@ a {
 	@include links(	$color__link__footer,
 					$color__link__footer-visited, 
 					$color__link__footer-hover );
+	color: #00ece4;
+	list-style: none;
+	text-decoration: none;
 }
 
 .header__titre a{

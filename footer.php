@@ -10,7 +10,11 @@
         <?php get_sidebar("footer_colonne_3");  ?>
         </section>
     </div>
+
     <div class="site__footer__ligne">
+        <section class="footer__recherche">
+                <?php get_search_form(); ?>
+        </section>
         <section class="footer__description">
             <?php get_sidebar("footer_ligne_2");  ?>
         </section>
@@ -33,9 +37,6 @@
                         "menu_class"=>"footer__menu__nav__ul",
                         "link_before"=>$icone)); ?>
                 <div class="footer__recherche">
-        </section>
-        <section class="footer__recherche">
-            <?php get_search_form(); ?>
         </section>
     </div>
 </footer>
