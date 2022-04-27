@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-theme name: Exer4 moïse kaseka
+theme name: 2022-4W4 Exercice #3
 Author: Moïse Kaseka
 Author URI: https://github.com/MoDev21/2022-4w4
 Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/eddytuto/2022-4w4
@@ -594,7 +594,7 @@ COMPOSANTES
   background-color: #40818100;
   color: #CCC9DC;
   border-radius: 5px;
-}
+display: flex;flex-direction: column;align-items: center;}
 
 .formation {
   display: flex;
@@ -1035,7 +1035,7 @@ COMPOSANTES
   border-style: none;
   background-color: #0e1520;
   border-radius: 5px;
-}
+display: flex;justify-content: flex-start;align-content: flex-start;flex-direction: row;align-items: stretch;}
 
 .site__footer__ligne {
   display: flex;

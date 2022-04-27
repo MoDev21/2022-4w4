@@ -11,6 +11,9 @@
     background-color: #40818100;
     color: $color__font-main;
     border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .formation {
