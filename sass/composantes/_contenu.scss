@@ -45,9 +45,11 @@
         animation: anim-entete 1s forwards;
         @media screen and (min-width : $largeur__media--tablette){
             width: 45%;
+            font-size: 1rem;
         }
         @media screen and (min-width : $largeur__media--desktop){
             width: 30%;
+            font-size: 1rem;
         }
         padding: 10px;
     

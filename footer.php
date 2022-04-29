@@ -5,7 +5,6 @@
             <?php get_sidebar("footer_colonne_1");  ?>
         </section>
         <section class="footer__lien">
-            <h3>Liens</h3>
             <?php get_sidebar("footer_colonne_2");  ?>
         </section>
         <section class="footer__adresse">
@@ -24,9 +23,9 @@
         <section class="footer__copyright">
             <p>&copy; Tous droit réservé - TIM - Collège de Maisonneuve</p>
         </section>
-        <section class="footer_sociaux">
-         <?php get_sidebar("footer_ligne_1");  ?>
-        </section>
+        <!-- <section class="footer_sociaux">
+        <?php get_sidebar("footer_ligne_1");  ?>
+        </section> -->
         <section class="footer__auteur">
             <p>Auteur : Eddy Martin</p>
         </section>
