@@ -120,6 +120,29 @@
 
 }
 
+.ordre{
+    display: flex;
+    
+    a svg{
+        transition: all 0.5s ease-in-out;
+        color:	$couleur__ordre__color;
+    }
+    
+    a svg:hover{
+        transition: all 0.5s ease-in-out;
+        color:	$couleur__ordre__color--hover;
+                        
+    }
+
+    a svg:active{
+        transition: all 0.5s ease-in-out;
+        color:	$couleur__ordre__color--hover;
+                        
+    }
+
+    
+}
+
 .cours__titre {
     font-size: 1.5rem;
     color: $color__font-main;

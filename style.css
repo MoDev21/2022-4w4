@@ -27,6 +27,7 @@ VARIABLES
 /* -----------------------------------------  heures */
 /* -----------------------------------------  Boite-modale */
 /* -----------------------------------------  Widget */
+/* -----------------------------------------  Widget */
 /* ------------------------------------- points de rupture des media queries */
 /* ---------------------------------------------------------
 INITIALISATION
@@ -709,6 +710,25 @@ COMPOSANTES
 
 .formation__cours:hover .cours__nbre-heure {
   color: #131d2c;
+}
+
+.ordre {
+  display: flex;
+}
+
+.ordre a svg {
+  transition: all 0.5s ease-in-out;
+  color: #1d7fcf;
+}
+
+.ordre a svg:hover {
+  transition: all 0.5s ease-in-out;
+  color: #CCC9DC;
+}
+
+.ordre a svg:active {
+  transition: all 0.5s ease-in-out;
+  color: #CCC9DC;
 }
 
 .cours__titre {
