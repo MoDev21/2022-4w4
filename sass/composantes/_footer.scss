@@ -6,6 +6,7 @@
     padding: 15px;
     display: flex;
     justify-content: center;
+    flex-direction: column;
   // les colonnes du pied de page 
     &__colonne { //.site__footer__colonne
         display: flex;

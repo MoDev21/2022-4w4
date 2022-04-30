@@ -445,18 +445,17 @@ a:hover, a:active {
 }
 
 .site__footer a {
-  color: #00ece4;
-  color: #00ece4;
+  color: #00b5ec;
   list-style: none;
   text-decoration: none;
 }
 
 .site__footer a:visited {
-  color: #00ece4;
+  color: #8a8892;
 }
 
 .site__footer a:hover, .site__footer a:focus, .site__footer a:active {
-  color: #246b69;
+  color: #CCC9DC;
 }
 
 .site__footer a:focus {
@@ -653,10 +652,10 @@ COMPOSANTES
 
 @keyframes anim-entete {
   0% {
-    transform: translateY(-100vh);
+    transform: scale(0);
   }
   100% {
-    transform: translateY(0);
+    transform: scale(1);
     transition: ease-in;
   }
 }
@@ -1003,6 +1002,7 @@ COMPOSANTES
   padding: 15px;
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 .site__footer__colonne {
@@ -1080,11 +1080,11 @@ COMPOSANTES
 }
 
 .footer__menu__nav__ul .menu-item a svg {
-  color: #00ece4;
+  color: #00b5ec;
 }
 
 .footer__menu__nav__ul .menu-item a:hover svg {
-  color: #246b69;
+  color: #CCC9DC;
 }
 
 .cours__contenu {
