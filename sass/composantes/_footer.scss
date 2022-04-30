@@ -5,17 +5,21 @@
     color: $color__font-footer;
     padding: 15px;
     display: flex;
+    justify-content: center;
   // les colonnes du pied de page 
     &__colonne { //.site__footer__colonne
+        display: flex;
         flex-direction: row;
         justify-content: space-between;
         list-style: none;
+        
         section {
           flex : 0 0 100%;
           border : 1px solid #aaa;
         }
         @media screen and (min-width : $largeur__media--tablette){
-          flex-direction: column;
+          display: flex;
+          flex-direction: row;
           justify-content: space-between;
 
           section { //  .site__footer__colonne  section
@@ -23,34 +27,45 @@
             
           }
         }
+        // @media screen and (min-width : $largeur__media--mobile){
+        //   // flex-direction: column;
+        //   // justify-content: space-between;
+
+        //   section { //  .site__footer__colonne  section
+        //     flex : 0 0 30%;
+            
+        //   }
+        // }
    
         .footer__adresse{ //.site__footer__colonne .footer__adresse 
           border-style: none;
           background-color: $couleur__widget__background;
           border-radius: 5px;
-          justify-content: flex-start;
-          align-content: flex-start;
-          flex-direction: column;
-          align-items: stretch;
+          // justify-content: flex-start;
+          // align-content: flex-start;
+          // flex-direction: column;
+          // align-items: stretch;
          }
         .footer__article {
           border-style: none;
           background-color: $couleur__widget__background;
           border-radius: 5px;
-          justify-content: flex-start;
-          align-content: flex-start;
-          flex-direction: column;
-          align-items: stretch;
+          // justify-content: flex-start;
+          // align-content: flex-start;
+          // flex-direction: column;
+          // align-items: stretch;
          }
         .footer__lien {
           border-style: none;
           background-color: $couleur__widget__background;
-          border-radius: 5px;
-          display: flex;
-          justify-content: flex-start;
-          align-content: flex-start;
-          flex-direction: column;
-          align-items: stretch;
+          border-radius: 5px;          
+          // display: flex;
+          // flex-direction: column;
+
+          // justify-content: flex-start;
+          // align-content: flex-start;
+          // flex-direction: column;
+          // align-items: stretch;
          }
     }
 // les lignes du pied de page

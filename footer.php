@@ -47,6 +47,7 @@
     <article class="boite__modale__texte">
             Ceci est un test vérifiant le fonctionnement d'une boîte modale
     </article>
+    <?= get_field( "departement" ); ?>
 </div>
 </body>
 <?php wp_footer(); ?>

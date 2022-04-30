@@ -1,16 +1,14 @@
 
 #burger {
     position : absolute;
-    transition : transform .3s;
-    transform : rotate(0);
+    height: 20px;
+    width: 20px;
 }
 #chk-burger {
     display : none;
 }
 
-#chk-burger:checked ~ #burger {
-    transform : rotate(90deg);
-}
+
 .menu-principal-container {
     display : none;
 }
