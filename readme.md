@@ -1,11 +1,11 @@
 # 4w4 - Conception d'interface et développement Web
 ### Auteur : Moïse Kaseka
-### Semaine #12 cours #2: Boite modale
+### Semaine #13 cours #3: Boite modale
 
 Développement des modules:
- - search.php
- - searchform.php
-Développement d'un nouveau mixin link_menu
+ - Boite modale
+ - menu hamburger
+ - 
 
  Début d'une animation
 

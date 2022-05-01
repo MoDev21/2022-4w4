@@ -1,9 +1,9 @@
 @charset "UTF-8";
 /*
-theme name: 2022-4W4 Exercice #3
+theme name: 2022-4W4 Exercice- 4 - Moïse Kaseka
 Author: Moïse Kaseka
 Author URI: https://github.com/MoDev21/2022-4w4
-Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/eddytuto/2022-4w4
+Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/MoDev21/2022-4w4
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
@@ -790,6 +790,7 @@ COMPOSANTES
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  flex-direction: column;
 }
 
 .site__header .custom-logo-link, .site__header .header__titre, .site__header .header__description {
@@ -799,6 +800,7 @@ COMPOSANTES
 .site__header .header__titre {
   font-size: clamp(3rem, 4vw, 8rem);
   font-family: "Saira", sans-serif;
+  margin: 0;
 }
 
 .site__header .header__description {
