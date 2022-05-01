@@ -5,7 +5,9 @@
 Développement des modules:
  - Boite modale
  - menu hamburger
- - 
+ - Header amélioré
+ - footer amélioré
+
 
  Début d'une animation
 
