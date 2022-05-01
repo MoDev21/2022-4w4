@@ -3,6 +3,7 @@
     .menu { //ul
         display : flex;
         justify-content: space-around;
+
         .accueil__cours .menu-item-icone{
             background-image: url('https://s2.svgbox.net/octicons.svg?ic=bug-bold');
         }
@@ -17,7 +18,7 @@
         }
 
         .menu-item { //li
-            width : 15%;
+            width : 90%;
             height : 250px;
             padding : 10px;
            
@@ -26,6 +27,7 @@
                 flex-direction: column;
                 justify-content: space-between;
                 align-items: center;
+                
                
                 font-size: 1.5rem;
                 height : 100%;
@@ -44,6 +46,14 @@
                     background-size: cover;
                 }
 
+            }
+
+            @media screen and (min-width : $largeur__media--tablette){
+                width: 55%;
+            }
+
+            @media screen and (min-width : $largeur__media--desktop){
+                width: 15%;
             }
         &:hover {
            

@@ -37,6 +37,10 @@
           
         }
     }
+
+    @media screen and (min-width : $largeur__media--tablette){
+        width: 45%;
+    }
 }
 
 @media screen and (min-width : $largeur__media--tablette){

@@ -10,7 +10,7 @@
   // les colonnes du pied de page 
     &__colonne { //.site__footer__colonne
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
         list-style: none;
         
@@ -46,7 +46,18 @@
           // align-content: flex-start;
           // flex-direction: column;
           // align-items: stretch;
+          @media screen and (min-width : $largeur__media--tablette){
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+  
+            section { //  .site__footer__colonne  section
+              flex : 0 0 30%;
+              
+            }
+          }
          }
+         
         .footer__article {
           border-style: none;
           background-color: $couleur__widget__background;
