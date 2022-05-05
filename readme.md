@@ -1,12 +1,9 @@
 # 4w4 - Conception d'interface et développement Web
 ### Auteur : Moïse Kaseka
-### Semaine #13 cours #3: Boite modale
+### Semaine #12 cours #3: Boîte modale et customizer
 
 Développement des modules:
- - Boite modale
- - menu hamburger
- - Header amélioré
- - footer amélioré
+ - Boîte modale et customizer
 
 
  Début d'une animation
