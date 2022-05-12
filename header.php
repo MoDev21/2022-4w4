@@ -13,6 +13,15 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat+Alternates:wght@300&family=Saira:wght@100&family=Work+Sans&display=swap" rel="stylesheet">
     <?php wp_head() ?>
+    <style>
+        .site__footer {
+            background-color:<?= get_theme_mod('couleur_background_footer'); ?>;
+        }
+
+        .site__header {
+            background-color:  <?= get_theme_mod('couleur_background_body'); ?>;
+        }
+    </style>
     <?php show_admin_bar(true); ?>
 </head>
 <body  <?php body_class("site"); ?>>

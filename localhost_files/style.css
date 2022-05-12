@@ -1,9 +1,9 @@
 @charset "UTF-8";
 /*
-theme name: 2022-4W4 lab7 - Moïse Kaseka
-Author: Moïse Kaseka
-Author URI: https://github.com/MoDev21/2022-4w4
-Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/MoDev21/2022-4w4
+theme name: groupe__3 eddy martin
+Author: Eddy martin
+Author URI: https://github.com/eddytuto
+Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/eddytuto/2022-4w4
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: LICENSE
@@ -20,14 +20,9 @@ VARIABLES
 /* ----------------------- couleur menu footer */
 /* ----------------------- couleur menu principal */
 /* ---------------- FONT */
-/* ---------------- RECHERCHE */
-/* ---------------- couleur bouton menu-catégorie cours*/
-/* ---------------- couleur titre principale*/
+/* ----------------------- couleur bouton menu-catégorie cours */
+/* --------------------------  couleur titre */
 /* -----------------------------------------  carte d'accueil */
-/* -----------------------------------------  heures */
-/* -----------------------------------------  Boite-modale */
-/* -----------------------------------------  Widget */
-/* -----------------------------------------  Widget */
 /* ------------------------------------- points de rupture des media queries */
 /* ---------------------------------------------------------
 INITIALISATION
@@ -360,8 +355,8 @@ LAYOUT
 theme name: Lab 2 Lemieux Florence
 */
 .site {
-  background-color: #1B2A41;
-  font-family: "Work Sans", sans-serif;
+  background-color: rgba(218, 224, 241, 0.5);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   max-width: 100vw;
 }
 
@@ -374,29 +369,31 @@ theme name: Lab 2 Lemieux Florence
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #273d60;
+  background-color: #60b4eb;
   z-index: -1;
   clip-path: polygon(87% 0, 100% 0, 100% 100%, 58% 100%);
 }
 
 .site__header {
   grid-area: header;
-  background-color: rgba(19, 29, 44, 0.5);
+  background-color: rgba(111, 174, 226, 0.5);
 }
 
 .site__barre {
   grid-area: sidebar;
-  background-color: #131d2c;
+  background-color: #051d29;
 }
 
 .site__main {
   grid-area: main;
-  background-color: rgba(19, 29, 44, 0.5);
+  background-color: rgba(213, 230, 241, 0.5);
+  display: flex;
+  flex-direction: column;
 }
 
 .site__footer {
   grid-area: footer;
-  background-color: #131d2c;
+  background-color: #07143b;
 }
 
 /* configuration mobile */
@@ -426,15 +423,15 @@ theme name: Lab 2 Lemieux Florence
 /* ---------------------------------- */
 /* -----------------------------------*/
 a {
-  color: #CCC9DC;
+  color: #7b5647;
 }
 
 a:visited {
-  color: #CCC9DC;
+  color: #5c4033;
 }
 
 a:hover, a:focus, a:active {
-  color: #131d2c;
+  color: white;
 }
 
 a:focus {
@@ -446,17 +443,15 @@ a:hover, a:active {
 }
 
 .site__footer a {
-  color: #00b5ec;
-  list-style: none;
-  text-decoration: none;
+  color: #f40b0b;
 }
 
 .site__footer a:visited {
-  color: #8a8892;
+  color: #1435eb;
 }
 
 .site__footer a:hover, .site__footer a:focus, .site__footer a:active {
-  color: #CCC9DC;
+  color: #19e123;
 }
 
 .site__footer a:focus {
@@ -468,15 +463,15 @@ a:hover, a:active {
 }
 
 .header__titre a {
-  color: #CCC9DC;
+  color: #f06a6a;
 }
 
 .header__titre a:visited {
-  color: #CCC9DC;
+  color: #7a49d4;
 }
 
 .header__titre a:hover, .header__titre a:focus, .header__titre a:active {
-  color: #696c92;
+  color: #8be58f;
 }
 
 .header__titre a:focus {
@@ -488,18 +483,18 @@ a:hover, a:active {
 }
 
 .site__footer .menu-item a {
-  color: #CCC9DC;
-  background-color: #131d2c;
+  color: #fff;
+  background-color: #444;
 }
 
 .site__footer .menu-item a:visited {
-  color: #CCC9DC;
-  background-color: #131d2c;
+  color: #ddd;
+  background-color: #555;
 }
 
 .site__footer .menu-item a:hover, .site__footer .menu-item a:focus, .site__footer .menu-item a:active {
-  color: #131d2c;
-  background-color: #CCC9DC;
+  color: #f00;
+  background-color: #222;
 }
 
 .site__footer .menu-item a:focus {
@@ -562,44 +557,31 @@ p {
 }
 
 h1, h2 {
-  font-family: "Montserrat Alternates", sans-serif;
-  color: #CCC9DC;
+  font-family: "Montserrat", sans-serif;
+  color: #070433;
 }
 
 h3, h4 {
-  font-family: "Saira", sans-serif;
-  color: #CCC9DC;
+  font-family: "Poppins", sans-serif;
+  color: #26234e;
 }
 
 h5, h6 {
-  font-family: "Work Sans", sans-serif;
-  color: #CCC9DC;
+  font-family: "Roboto", sans-serif;
 }
 
 p {
-  font-family: "Work Sans", sans-serif;
-  color: #CCC9DC;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
 /* ---------------------------------------------------------
 COMPOSANTES
 --------------------------------------------------------- */
 .site__main {
-  margin: 20px;
   padding: 10px 15px;
-  background-color: #131d2c;
+  background-color: #d5e6f1;
   border-radius: 5px;
-}
-
-.site__main, h3 {
-  margin: 20px;
-  padding: 10px 15px;
-  background-color: #40818100;
-  color: #CCC9DC;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  box-shadow: #39443e 1px -1px 10px;
 }
 
 .formation {
@@ -608,11 +590,7 @@ COMPOSANTES
 }
 
 .formation__titre {
-  font-size: 2rem;
-  color: #CCC9DC;
   margin: 10px 0px;
-  text-align: center;
-  text-decoration: none;
 }
 
 .formation__liste {
@@ -621,50 +599,10 @@ COMPOSANTES
 }
 
 .formation__cours {
-  background-color: #131d2c;
   background-repeat: no-repeat;
-  background-position: 93% 30%;
-  border-radius: 5px;
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  animation: anim-entete 1s forwards;
-  padding: 10px;
-}
-
-@media screen and (min-width: 800px) {
-  .formation__cours {
-    width: 45%;
-    font-size: 1rem;
-  }
-}
-
-@media screen and (min-width: 1100px) {
-  .formation__cours {
-    width: 30%;
-    font-size: 1rem;
-  }
-}
-
-.formation__cours .cours__nbre-heure {
-  color: #CCC9DC;
-}
-
-@keyframes anim-entete {
-  0% {
-    transform: scale(0);
-  }
-  100% {
-    transform: scale(1);
-    transition: ease-in;
-  }
-}
-
-.formation__cours:hover {
-  transition: 0.5s;
-  background-color: #CCC9DC;
-  color: #1B2A41;
+  background-position: 97% 3%;
+  background-color: #d1e9ff;
+  box-shadow: #394044 1px -1px 10px;
   border-radius: 5px;
   margin: 10px;
   display: flex;
@@ -674,66 +612,20 @@ COMPOSANTES
 }
 
 @media screen and (min-width: 800px) {
-  .formation__cours:hover {
+  .formation__cours {
     width: 45%;
   }
 }
 
 @media screen and (min-width: 1100px) {
-  .formation__cours:hover {
+  .formation__cours {
     width: 30%;
   }
-}
-
-.formation__cours:hover p {
-  color: #1B2A41;
-}
-
-.formation__cours:hover .cours__titre a {
-  font-size: 1.8rem;
-  color: #1B2A41;
-  text-align: center;
-  margin: 5px 0px;
-  transition: 0.5s;
-}
-
-.formation__cours:hover .cours__titre a:hover {
-  font-size: 1.9rem;
-  color: rgba(27, 42, 65, 0.5);
-}
-
-.formation__cours:hover .cours__sigle {
-  font-size: 1.2rem;
-  color: #1B2A41;
-  margin: 0;
-}
-
-.formation__cours:hover .cours__nbre-heure {
-  color: #131d2c;
-}
-
-.ordre {
-  display: flex;
-}
-
-.ordre a svg {
-  transition: all 0.5s ease-in-out;
-  color: #1d7fcf;
-}
-
-.ordre a svg:hover {
-  transition: all 0.5s ease-in-out;
-  color: #CCC9DC;
-}
-
-.ordre a svg:active {
-  transition: all 0.5s ease-in-out;
-  color: #CCC9DC;
 }
 
 .cours__titre {
   font-size: 1.5rem;
-  color: #CCC9DC;
+  color: #dbdff3;
   margin: 5px 0px;
 }
 
@@ -775,8 +667,8 @@ COMPOSANTES
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #131d2c;
-  color: #CCC9DC;
+  background-color: #6faee2;
+  color: #d6d8e4;
   padding-left: 10px;
 }
 
@@ -790,7 +682,6 @@ COMPOSANTES
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  flex-direction: column;
 }
 
 .site__header .custom-logo-link, .site__header .header__titre, .site__header .header__description {
@@ -799,13 +690,12 @@ COMPOSANTES
 
 .site__header .header__titre {
   font-size: clamp(3rem, 4vw, 8rem);
-  font-family: "Saira", sans-serif;
-  margin: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
 
 .site__header .header__description {
   font-size: clamp(2rem, 2vw, 3rem);
-  font-family: "Work Sans", sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .util {
@@ -830,8 +720,6 @@ COMPOSANTES
 
 #burger {
   position: absolute;
-  height: 20px;
-  width: 20px;
 }
 
 #chk-burger {
@@ -865,12 +753,6 @@ COMPOSANTES
   display: block;
   text-decoration: none;
   padding: 4px;
-}
-
-@media screen and (min-width: 800px) {
-  .menu-item {
-    width: 100%;
-  }
 }
 
 @media screen and (min-width: 800px) {
@@ -910,7 +792,7 @@ COMPOSANTES
 }
 
 .menu-accueil-container .menu .menu-item, .menu-evenement-container .menu .menu-item {
-  width: 90%;
+  width: 15%;
   height: 250px;
   padding: 10px;
 }
@@ -941,48 +823,36 @@ COMPOSANTES
   background-size: cover;
 }
 
-@media screen and (min-width: 800px) {
-  .menu-accueil-container .menu .menu-item, .menu-evenement-container .menu .menu-item {
-    width: 55%;
-  }
-}
-
-@media screen and (min-width: 1100px) {
-  .menu-accueil-container .menu .menu-item, .menu-evenement-container .menu .menu-item {
-    width: 15%;
-  }
-}
-
 .menu-accueil-container .menu-item {
-  background-color: #131d2c;
+  background-color: #447cbb;
 }
 
 .menu-accueil-container .menu-item a {
-  color: #CCC9DC;
+  color: #eed70b;
 }
 
 .menu-accueil-container .menu-item:hover {
-  background-color: #CCC9DC;
+  background-color: #3552a1;
 }
 
 .menu-accueil-container .menu-item:hover a {
-  color: #131d2c;
+  color: #ece57f;
 }
 
 .menu-evenement-container .menu-item {
-  background-color: #131d2c;
+  background-color: #0c0a47;
 }
 
 .menu-evenement-container .menu-item a {
-  color: #CCC9DC;
+  color: #ffcc00;
 }
 
 .menu-evenement-container .menu-item:hover {
-  background-color: #CCC9DC;
+  background-color: #002aff;
 }
 
 .menu-evenement-container .menu-item:hover a {
-  color: #131d2c;
+  color: #c7b363;
 }
 
 .menu-categorie_cours-container .menu {
@@ -992,46 +862,92 @@ COMPOSANTES
 
 .menu-categorie_cours-container .menu .menu-item {
   margin: 0 15px;
-  background-color: #131d2c;
+  background-color: #447cbb;
 }
 
 .menu-categorie_cours-container .menu .menu-item a {
-  color: #CCC9DC;
+  color: #eed70b;
   padding: 5px;
 }
 
 .menu-categorie_cours-container .menu .menu-item:hover {
-  background-color: #CCC9DC;
+  background-color: #3552a1;
 }
 
 .menu-categorie_cours-container .menu .menu-item:hover a {
-  color: #131d2c;
+  color: #ece57f;
 }
 
 .menu-categorie_cours-container .menu .current-menu-item {
-  background-color: #ccc9dc86;
+  background-color: #081843;
 }
 
 .menu-categorie_cours-container .menu .current-menu-item a {
-  color: #131d2c;
+  color: #fecf00;
+}
+
+.boite__modale, .boite__carrousel {
+  position: fixed;
+  border: 10px solid #aaa;
+  background-color: aqua;
+  transform: scale(0);
+  transition: all 1s ease-in-out;
+}
+
+.boite__modale__ouvrir, .boite__carrousel__ouvrir {
+  transform: scale(1);
+}
+
+.boite__modale__ferme, .boite__carrousel__ferme {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
 }
 
 .boite__modale {
-  position: fixed;
   width: 50%;
   height: 50%;
-  background-color: #CCC9DC;
-  color: #131d2c;
   top: 25%;
   left: 25%;
-  transform: scale(0);
-  transition: all 1s ease-in-out;
-  border-radius: 2%;
-  box-shadow: 1px;
 }
 
-.boite__modale__ouvrir {
-  transform: scale(1);
+.boite__carrousel {
+  width: 75%;
+  height: 75%;
+  top: 12.5%;
+  left: 12.5%;
+}
+
+.boite__carrousel img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.boite__carrousel__navigation {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border: 1ps solid red;
+  z-index: 1;
+}
+
+.boite__carrousel__navigation button {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+}
+
+.boite__carrousel__navigation button:focus {
+  background-color: black;
 }
 
 /**
@@ -1053,20 +969,15 @@ Galerie gutenberg de la page d'accueil
 
 /* ---------------------------------------------------- FOOTER */
 .site__footer {
-  font-family: "Saira", sans-serif;
-  background-color: #131d2c;
-  color: #CCC9DC;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  background-color: #07143b;
+  color: #e2e7f8;
   padding: 15px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
 }
 
 .site__footer__colonne {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  list-style: none;
 }
 
 .site__footer__colonne section {
@@ -1076,42 +987,12 @@ Galerie gutenberg de la page d'accueil
 
 @media screen and (min-width: 800px) {
   .site__footer__colonne {
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
   .site__footer__colonne section {
     flex: 0 0 30%;
   }
-}
-
-.site__footer__colonne .footer__adresse {
-  border-style: none;
-  background-color: #0e1520;
-  border-radius: 5px;
-}
-
-@media screen and (min-width: 800px) {
-  .site__footer__colonne .footer__adresse {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .site__footer__colonne .footer__adresse section {
-    flex: 0 0 30%;
-  }
-}
-
-.site__footer__colonne .footer__article {
-  border-style: none;
-  background-color: #0e1520;
-  border-radius: 5px;
-}
-
-.site__footer__colonne .footer__lien {
-  border-style: none;
-  background-color: #0e1520;
-  border-radius: 5px;
 }
 
 .site__footer__ligne {
@@ -1148,11 +1029,11 @@ Galerie gutenberg de la page d'accueil
 }
 
 .footer__menu__nav__ul .menu-item a svg {
-  color: #00b5ec;
+  color: #f40b0b;
 }
 
 .footer__menu__nav__ul .menu-item a:hover svg {
-  color: #CCC9DC;
+  color: #19e123;
 }
 
 .cours__contenu {
@@ -1230,9 +1111,22 @@ ANIMATION
   animation: anim-entete 1s forwards;
 }
 
+@keyframes anim-entete {
+  0% {
+    transform: translateY(-100vh);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .burger {
-  width: 10rem;
-  height: 10rem;
+  margin: 10px;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 25%;
+  overflow: hidden;
+  background-color: transparent;
 }
 
 .burger .burger__ligne {
@@ -1241,8 +1135,8 @@ ANIMATION
   height: 100%;
   top: 0;
   left: 0;
-  background-color: #008cff;
-  transition: all 0.3s ease-in-out;
+  background-color: #01080f;
+  transition: all .2s ease-in-out;
 }
 
 .burger .burger__ligne:nth-of-type(1) {
@@ -1257,13 +1151,9 @@ ANIMATION
   clip-path: polygon(0 80%, 100% 80%, 100% 100%, 0 100%);
 }
 
-.burger:hover .burger__ligne {
-  transition: all 0.3s ease-in-out;
-  background-color: #a0a0c3;
-}
-
+/* Le bouton burger s'anime quand la case à cocher (invisible) est cochée */
 #chk-burger:checked ~ #burger .burger__ligne {
-  background-color: #d8a2d5;
+  background-color: aliceblue;
 }
 
 #chk-burger:checked ~ #burger .burger__ligne:nth-of-type(1) {
@@ -1271,10 +1161,10 @@ ANIMATION
 }
 
 #chk-burger:checked ~ #burger .burger__ligne:nth-of-type(2) {
-  clip-path: polygon(45% 48%, 55% 48%, 55% 68%, 45% 68%);
+  clip-path: polygon(45% 40%, 55% 40%, 55% 60%, 45% 60%);
 }
 
 #chk-burger:checked ~ #burger .burger__ligne:nth-of-type(3) {
-  clip-path: polygon(-7% 93%, 98% -14%, 100% 14%, -3% 118%);
+  clip-path: polygon(-7.1% 92.9%, 92.9% -7.1%, 107.1% 7.1%, 7.1% 107.1%);
 }
 /*# sourceMappingURL=style.css.map */

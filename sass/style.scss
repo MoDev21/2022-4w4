@@ -1,5 +1,5 @@
 /*
-theme name: 2022-4W4 lab6 - Moïse Kaseka
+theme name: 2022-4W4 lab7 - Moïse Kaseka
 Author: Moïse Kaseka
 Author URI: https://github.com/MoDev21/2022-4w4
 Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/MoDev21/2022-4w4
@@ -41,6 +41,8 @@ COMPOSANTES
 @import "composantes/navigation_accueil";
 @import "composantes/navigation_categorie_cours";
 @import "composantes/boite_modale";
+@import "composantes/galerie";
+@import "composantes/accueil";
 /* ---------------------------------------------------- FOOTER */
 @import "composantes/footer";
 @import "composantes/single_cours";

@@ -42,12 +42,19 @@
         </section>
     </div>
 </footer>
+<!-- boîte modale -->
 <div class="boite__modale">
     <button class="boite__modale__ferme">X</button>
     <article class="boite__modale__texte">
             Ceci est un test vérifiant le fonctionnement d'une boîte modale
     </article>
     <?= get_field( "departement" ); ?>
+</div>
+<!-- boîte carrousel -->
+<div class="boite__carrousel">
+    <button class="boite__carrousel__ferme">X</button>
+    <section class="boite__carrousel__navigation"></section>
+    <section class="boite__carrousel__img"></section>
 </div>
 </body>
 <?php wp_footer(); ?>
