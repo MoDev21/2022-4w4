@@ -12,7 +12,6 @@
                             "container"=>"nav"));
 ?>
 
-    <h1>---- Front-page.php ------</h1>
    <?php if (have_posts()): the_post(); ?>
         <h1><?php the_title() ?></h1>
         <?php the_content() ?>   
