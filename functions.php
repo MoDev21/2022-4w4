@@ -27,7 +27,7 @@ function cidw_4w4_enqueue(){
         wp_enqueue_script('cidw-4w4-boite-modale');
     }
     if (is_front_page()){
-        wp_enqueue_script('cidw-4w4-caroussel');
+        wp_enqueue_script('cidw-4w4-carrousel');
     }
 
     wp_enqueue_style('cidw-4w4-police-google',"https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@300;400;500&family=Roboto&display=swap", false);          

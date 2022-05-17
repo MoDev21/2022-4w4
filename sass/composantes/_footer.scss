@@ -48,8 +48,7 @@
           // align-items: stretch;
           @media screen and (min-width : $largeur__media--tablette){
             display: flex;
-            flex-direction: row;
-            justify-content: space-between;
+            flex-direction: column;
   
             section { //  .site__footer__colonne  section
               flex : 0 0 30%;

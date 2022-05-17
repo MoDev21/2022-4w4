@@ -387,6 +387,7 @@ theme name: Lab 2 Lemieux Florence
 .site__barre {
   grid-area: sidebar;
   background-color: #131d2c;
+  transition: all .3s;
 }
 
 .site__main {
@@ -1016,7 +1017,7 @@ COMPOSANTES
   color: #131d2c;
 }
 
-.boite__modale {
+.boite__modale, .boite__carrousel {
   position: fixed;
   width: 50%;
   height: 50%;
@@ -1030,20 +1031,135 @@ COMPOSANTES
   box-shadow: 1px;
 }
 
-.boite__modale__ouvrir {
+.boite__modale__ouvrir, .boite__carrousel__ouvrir {
   transform: scale(1);
+}
+
+.boite__modale__ferme, .boite__carrousel__ferme {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+}
+
+/* --------------------------------------------  boite modale  seulement */
+.boite__modale {
+  width: 50%;
+  height: 50%;
+  top: 25%;
+  left: 25%;
+}
+
+/* -------------------------------------------- boite carrousel */
+.boite__carrousel {
+  width: 95%;
+  height: 95%;
+  top: 2.5%;
+  left: 2.5%;
+}
+
+@media screen and (min-width: 500px) {
+  .boite__carrousel {
+    width: 75%;
+    height: 75%;
+    top: 12.5%;
+    left: 12.5%;
+  }
+}
+
+.boite__carrousel__img {
+  position: absolute;
+  object-fit: cover;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.boite__carrousel__img img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  animation: retour 2s forwards;
+  transition: all 1s ease-in-out;
+}
+
+.boite__carrousel__img img.img--ouvrir {
+  opacity: 1;
+  animation: montrer 1s forwards;
+}
+
+.boite__carrousel__img img.img--fermer {
+  opacity: 0;
+}
+
+.boite__carrousel__navigation {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border: 1ps solid red;
+  z-index: 1;
+}
+
+.boite__carrousel__navigation .bouton {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+}
+
+.boite__carrousel__navigation .bouton:checked {
+  background-color: black;
+}
+
+@keyframes retour {
+  0% {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  80% {
+    transform: translateX(100%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes montrer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.erreur-404 h1 {
+  font-size: 5rem;
+  font-family: "Saira", sans-serif;
 }
 
 /**
 Galerie gutenberg de la page d'accueil
 */
 .galerie {
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  width: 95%;
 }
 
 @media screen and (min-width: 500px) {
   .galerie {
-    width: 75%;
+    width: 80%;
   }
 }
 
@@ -1094,8 +1210,7 @@ Galerie gutenberg de la page d'accueil
 @media screen and (min-width: 800px) {
   .site__footer__colonne .footer__adresse {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    flex-direction: column;
   }
   .site__footer__colonne .footer__adresse section {
     flex: 0 0 30%;

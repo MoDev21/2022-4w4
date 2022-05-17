@@ -45,9 +45,7 @@
 <!-- boîte modale -->
 <div class="boite__modale">
     <button class="boite__modale__ferme">X</button>
-    <article class="boite__modale__texte">
-            Ceci est un test vérifiant le fonctionnement d'une boîte modale
-    </article>
+    <article class="boite__modale__texte"></article>
     <?= get_field( "departement" ); ?>
 </div>
 <!-- boîte carrousel -->

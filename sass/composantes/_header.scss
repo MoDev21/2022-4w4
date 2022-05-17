@@ -38,8 +38,8 @@
     width : 90%;
     justify-content: center;
     @media screen and (min-width : $largeur__media--tablette){
-    margin-left : auto;
-    width : 350px;
+      margin-left : auto;
+      width : 350px;
     }
     &__lien{
       display: flex;
