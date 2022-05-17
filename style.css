@@ -868,6 +868,14 @@ COMPOSANTES
   padding: 4px;
 }
 
+.menu-item a:hover {
+  background-color: #CCC9DC;
+}
+
+.menu-item a:hover a {
+  color: #131d2c;
+}
+
 @media screen and (min-width: 800px) {
   .menu-item {
     width: 100%;
