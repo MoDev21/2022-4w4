@@ -19,7 +19,6 @@
 .formation {
     display: flex;
     flex-direction: column;
-
     &__titre {   
         font-size: 2rem;
         color: $color__font-main;
@@ -81,6 +80,7 @@
     margin: 10px;
     display: flex;
     flex-direction: column;
+    transform: scale(110%);
     width: 100%;
     @media screen and (min-width : $largeur__media--tablette){
         width: 45%;

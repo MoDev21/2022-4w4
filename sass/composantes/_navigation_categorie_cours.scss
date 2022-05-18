@@ -3,23 +3,29 @@
     .menu { // ul
         display : flex;
         list-style-type: none;
-
+        
         .menu-item{ // li
+            transition: all 0.3s;
             margin : 0 15px;
             background-color: $color__bouton__background;
+            border-radius: 5%;
                 a {
                     color : $color__bouton__color;
                     padding : 5px;
                 }
 
             &:hover {
+                
                 background-color: $color__bouton__background--hover;
                 a { 
+                    border-radius: 5%;
                     color : $color__bouton__color--hover;
                 }
+                transform: scale(110%);
             }
         }
         .current-menu-item {
+            border-radius: 5%;
             background-color: $color__bouton__background--current;
             a { 
                 color : $color__bouton__color--current;

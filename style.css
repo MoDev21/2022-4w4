@@ -671,6 +671,7 @@ COMPOSANTES
   margin: 10px;
   display: flex;
   flex-direction: column;
+  transform: scale(110%);
   width: 100%;
   padding: 10px;
 }
@@ -1006,8 +1007,10 @@ COMPOSANTES
 }
 
 .menu-categorie_cours-container .menu .menu-item {
+  transition: all 0.3s;
   margin: 0 15px;
   background-color: #131d2c;
+  border-radius: 5%;
 }
 
 .menu-categorie_cours-container .menu .menu-item a {
@@ -1017,13 +1020,16 @@ COMPOSANTES
 
 .menu-categorie_cours-container .menu .menu-item:hover {
   background-color: #CCC9DC;
+  transform: scale(110%);
 }
 
 .menu-categorie_cours-container .menu .menu-item:hover a {
+  border-radius: 5%;
   color: #131d2c;
 }
 
 .menu-categorie_cours-container .menu .current-menu-item {
+  border-radius: 5%;
   background-color: #ccc9dc86;
 }
 
