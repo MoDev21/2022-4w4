@@ -37,7 +37,7 @@
         background-color: $color__background-cours;
         background-repeat: no-repeat;
         background-position: 93% 30%;
-        border-radius: 5px;
+        border-radius: 5%;
         margin: 10px;
         display: flex;
         flex-direction: column;
@@ -77,7 +77,7 @@
     transition: 0.5s;
     background-color: $color__background-cours-hover;
     color: $color__font-main-hover;
-    border-radius: 5px;
+    border-radius: 5%;
     margin: 10px;
     display: flex;
     flex-direction: column;

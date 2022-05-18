@@ -626,7 +626,7 @@ COMPOSANTES
   background-color: #131d2c;
   background-repeat: no-repeat;
   background-position: 93% 30%;
-  border-radius: 5px;
+  border-radius: 5%;
   margin: 10px;
   display: flex;
   flex-direction: column;
@@ -667,7 +667,7 @@ COMPOSANTES
   transition: 0.5s;
   background-color: #CCC9DC;
   color: #1B2A41;
-  border-radius: 5px;
+  border-radius: 5%;
   margin: 10px;
   display: flex;
   flex-direction: column;
