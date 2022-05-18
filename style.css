@@ -978,6 +978,10 @@ COMPOSANTES
   color: #131d2c;
 }
 
+.menu-evenement-container {
+  transition: all .3s;
+}
+
 .menu-evenement-container .menu-item {
   background-color: #131d2c;
 }
@@ -1275,6 +1279,11 @@ Galerie gutenberg de la page d'accueil
 }
 
 .footer__menu__nav__ul .menu-item a:hover svg {
+  color: #CCC9DC;
+}
+
+.wp-block-calendar tbody td, .wp-block-calendar th {
+  padding: 0.25em;
   color: #CCC9DC;
 }
 

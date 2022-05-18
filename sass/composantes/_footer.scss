@@ -131,3 +131,10 @@
      }
   }
 }
+
+
+
+.wp-block-calendar tbody td, .wp-block-calendar th {
+    padding: 0.25em;
+    color: $color__font-footer;
+}
