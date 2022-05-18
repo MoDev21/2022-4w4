@@ -960,10 +960,12 @@ COMPOSANTES
 @media screen and (min-width: 1100px) {
   .menu-accueil-container .menu .menu-item, .menu-evenement-container .menu .menu-item {
     width: 15%;
+    border-radius: 10%;
   }
 }
 
 .menu-accueil-container .menu-item {
+  transition: all 0.3s;
   background-color: #131d2c;
 }
 
@@ -973,17 +975,15 @@ COMPOSANTES
 
 .menu-accueil-container .menu-item:hover {
   background-color: #CCC9DC;
+  transform: scale(110%);
 }
 
 .menu-accueil-container .menu-item:hover a {
   color: #131d2c;
 }
 
-.menu-evenement-container {
-  transition: all .3s;
-}
-
 .menu-evenement-container .menu-item {
+  transition: all 0.3s;
   background-color: #131d2c;
 }
 
@@ -993,6 +993,7 @@ COMPOSANTES
 
 .menu-evenement-container .menu-item:hover {
   background-color: #CCC9DC;
+  transform: scale(110%);
 }
 
 .menu-evenement-container .menu-item:hover a {

@@ -3,7 +3,7 @@
     .menu { //ul
         display : flex;
         justify-content: space-around;
-
+        
         .accueil__cours .menu-item-icone{
             background-image: url('https://s2.svgbox.net/octicons.svg?ic=bug-bold');
         }
@@ -54,6 +54,7 @@
 
             @media screen and (min-width : $largeur__media--desktop){
                 width: 15%;
+                border-radius: 10%;
             }
         &:hover {
 
@@ -75,6 +76,7 @@
 .menu-accueil-container {
     
     .menu-item {
+        transition: all 0.3s;
         background-color: $color__bouton__background;
         a{
             color : $color__bouton__color;
@@ -85,6 +87,7 @@
             a{            
                 color : $color__bouton__color--hover;
             }
+            transform: scale(110%);
         }    
     }
 
@@ -93,19 +96,20 @@
 
 
 .menu-evenement-container {
-    transition: all .3s;
     .menu-item {
+        transition: all 0.3s;
         background-color: $couleur__carte__evenement__background ;
         a{
             color: $couleur__carte__evenement ;
    
         }
-    &:hover{
-        background-color: $couleur__carte__evenement__background--hover ;
-        a{
-            color: $couleur__carte__evenement--hover ;
-        }
-    }    
+        &:hover{
+            background-color: $couleur__carte__evenement__background--hover ;
+            a{
+                color: $couleur__carte__evenement--hover ;
+            }
+            transform: scale(110%);
+        }    
     }
 
 }
