@@ -15,7 +15,7 @@
         list-style: none;
         
         section {
-          flex : 0 0 100%;
+          flex: 0 0 25%;
           border : 1px solid #aaa;
         }
         @media screen and (min-width : $largeur__media--tablette){
@@ -42,6 +42,7 @@
           border-style: none;
           background-color: $couleur__widget__background;
           border-radius: 5px;
+          height: 100%;
           // justify-content: flex-start;
           // align-content: flex-start;
           // flex-direction: column;

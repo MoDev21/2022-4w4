@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /*
-theme name: 2022-4W4 lab7 - Moïse Kaseka
+theme name: 2022-4W4 TP2 - Moïse Kaseka
 Author: Moïse Kaseka
-Author URI: https://github.com/MoDev21/2022-4w4
+Author URI: https://github.com/MoDev21/2022-4w4/tree/tp2
 Description: Ce thème servira de base de développement pour l'ensemble du cours 4W4. Chacune des étapes de développement se retrouvera sur gitHub à l'adresse: https://github.com/MoDev21/2022-4w4
 Version: 1.0.0
 License: GNU General Public License v2 or later
@@ -1206,7 +1206,7 @@ Galerie gutenberg de la page d'accueil
 }
 
 .site__footer__colonne section {
-  flex: 0 0 100%;
+  flex: 0 0 25%;
   border: 1px solid #aaa;
 }
 
@@ -1225,6 +1225,7 @@ Galerie gutenberg de la page d'accueil
   border-style: none;
   background-color: #0e1520;
   border-radius: 5px;
+  height: 100%;
 }
 
 @media screen and (min-width: 800px) {
