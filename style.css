@@ -1312,18 +1312,22 @@ Galerie gutenberg de la page d'accueil
 .recherche__input {
   flex: 1;
   width: 100%;
-  background-color: rgba(195, 196, 223, 0.1);
+  background-color: rgba(10, 15, 24, 0.1);
+  color: #CCC9DC;
   transition: all .3s;
   border: none;
   outline: none;
 }
 
 .recherche__input:focus {
-  background-color: rgba(195, 196, 223, 0.5);
+  background-color: #c3c4df;
+  color: #0a0f18;
 }
 
 .recherche__bouton {
   height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  color: #c3c4df;
   position: absolute;
   right: 0;
   top: 0;
