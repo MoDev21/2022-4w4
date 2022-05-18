@@ -428,6 +428,7 @@ theme name: Lab 2 Lemieux Florence
 /* -----------------------------------*/
 a {
   color: #CCC9DC;
+  text-decoration: none;
 }
 
 a:visited {

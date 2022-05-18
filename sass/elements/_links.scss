@@ -63,7 +63,8 @@
 a {
 	@include links(	$color__link,
 					$color__link-visited, 
-					$color__link-hover )
+					$color__link-hover );
+	text-decoration: none;
 }
 
  .site__footer a{
