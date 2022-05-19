@@ -11,12 +11,16 @@
         wp_nav_menu(array("menu"=>"evenement",
                             "container"=>"nav"));
 ?>
+<h2>Les ateliers à venir</h2>
+<?php 
+        wp_nav_menu(array("menu"=>"evenement",
+                            "container"=>"nav"));
+?>
 
-   <?php if (have_posts()): the_post(); ?>
+<?php if (have_posts()): the_post(); ?>
         <h1><?php the_title() ?></h1>
         <?php the_content() ?>   
-  
-   <?php endif ?>
+<?php endif ?>
    
 </main>
 <?php get_footer() ?>
