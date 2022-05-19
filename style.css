@@ -920,6 +920,22 @@ COMPOSANTES
   background-image: url("https://s2.svgbox.net/octicons.svg?ic=bug-bold");
 }
 
+.menu-accueil-container .menu .atelier__htmlcss .menu-item-icone, .menu-evenement-container .menu .atelier__htmlcss .menu-item-icone, .menu-atelier-container .menu .atelier__htmlcss .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=html");
+}
+
+.menu-accueil-container .menu .atelier__git .menu-item-icone, .menu-evenement-container .menu .atelier__git .menu-item-icone, .menu-atelier-container .menu .atelier__git .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=git");
+}
+
+.menu-accueil-container .menu .atelier__react .menu-item-icone, .menu-evenement-container .menu .atelier__react .menu-item-icone, .menu-atelier-container .menu .atelier__react .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=reactjs");
+}
+
+.menu-accueil-container .menu .atelier__css .menu-item-icone, .menu-evenement-container .menu .atelier__css .menu-item-icone, .menu-atelier-container .menu .atelier__css .menu-item-icone {
+  background-image: url("https://s2.svgbox.net/files.svg?ic=css");
+}
+
 .menu-accueil-container .menu .menu-item, .menu-evenement-container .menu .menu-item, .menu-atelier-container .menu .menu-item {
   width: 90%;
   height: 250px;

@@ -17,6 +17,19 @@
             background-image: url('https://s2.svgbox.net/octicons.svg?ic=bug-bold');
         }
 
+        .atelier__htmlcss .menu-item-icone{
+            background-image: url('https://s2.svgbox.net/files.svg?ic=html');
+        }
+        .atelier__git .menu-item-icone{
+            background-image: url('https://s2.svgbox.net/files.svg?ic=git');
+        }
+        .atelier__react .menu-item-icone{
+            background-image: url('https://s2.svgbox.net/files.svg?ic=reactjs');
+        }
+        .atelier__css .menu-item-icone{
+            background-image: url('https://s2.svgbox.net/files.svg?ic=css');
+        }
+
         .menu-item { //li
             width : 90%;
             height : 250px;
