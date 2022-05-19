@@ -13,7 +13,7 @@
 ?>
 <h2>Les ateliers à venir</h2>
 <?php 
-        wp_nav_menu(array("menu"=>"evenement",
+        wp_nav_menu(array("menu"=>"atelier",
                             "container"=>"nav"));
 ?>
 

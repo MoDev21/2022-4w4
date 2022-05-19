@@ -113,3 +113,22 @@
     }
 
 }
+
+.menu-atelier-container {
+    .menu-item {
+        transition: all 0.3s;
+        background-color: $couleur__carte__evenement__background ;
+        a{
+            color: $couleur__carte__evenement ;
+   
+        }
+        &:hover{
+            background-color: $couleur__carte__evenement__background--hover ;
+            a{
+                color: $couleur__carte__evenement--hover ;
+            }
+            transform: scale(110%);
+        }    
+    }
+
+}

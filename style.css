@@ -1001,6 +1001,24 @@ COMPOSANTES
   color: #131d2c;
 }
 
+.menu-atelier-container .menu-item {
+  transition: all 0.3s;
+  background-color: #131d2c;
+}
+
+.menu-atelier-container .menu-item a {
+  color: #CCC9DC;
+}
+
+.menu-atelier-container .menu-item:hover {
+  background-color: #CCC9DC;
+  transform: scale(110%);
+}
+
+.menu-atelier-container .menu-item:hover a {
+  color: #131d2c;
+}
+
 .menu-categorie_cours-container .menu {
   display: flex;
   list-style-type: none;
